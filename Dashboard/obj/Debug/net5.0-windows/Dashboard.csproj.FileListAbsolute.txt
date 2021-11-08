@@ -1,0 +1,134 @@
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Yuri Lemos\Downloads\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Pedro\Downloads\DashboardF\Dashboard\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+D:\IPCA\3ano\1semestre\isi\tp1\vJoao\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+D:\IPCA\3ano\1semestre\isi\tp1\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
+C:\Users\Pedro\Desktop\Nova pasta\Dashboard\obj\Debug\net5.0-windows\Dashboard.Dash_full_gets.resources
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.exe
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.deps.json
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.json
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.runtimeconfig.dev.json
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\ISI\Dashboard\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.AssemblyReference.cache
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.Final_dash.resources
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.GenerateResource.cache
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.AssemblyInfo.cs
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.dll
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\ref\Dashboard.dll
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.pdb
+C:\Users\Pedro\Desktop\ISI\Dashboard\obj\Debug\net5.0-windows\Dashboard.genruntimeconfig.cache
