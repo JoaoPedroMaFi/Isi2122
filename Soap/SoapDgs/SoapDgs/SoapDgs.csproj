@@ -108,7 +108,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\DatabaseAcess.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Equipa.cs" />
+    <Compile Include="Models\Infectado.cs" />
+    <Compile Include="Models\Suspeito.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sevices\Client.svc.cs">
       <DependentUpon>Client.svc</DependentUpon>

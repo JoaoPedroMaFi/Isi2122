@@ -8,26 +8,20 @@ namespace SoapDgs.Models
 {
     [DataContract]
     /// <summary>
-    /// Isto abstrai uma pessoa
+    /// Isto abstrai uma equipa
     /// </summary>
-    public class Person
+    public class Equipa
     {
+        /// <summary>
+        /// Id de uma equipa
+        /// </summary>
+        [DataMember]
+        public int Idequipa { get; set; }
 
         /// <summary>
-        /// Id da pessoa
+        /// Nome da equipa
         /// </summary>
         [DataMember]
-        public int Idpessoa { get; set; }
-        /// <summary>
-        /// Primeiro nome da pessoa
-        /// </summary>
-        [DataMember]
-        public string Firstname { get; set; }
-
-        /// <summary>
-        /// Último nome da pessoa
-        /// </summary>
-        [DataMember]
-        public string Laststname { get; set; }
+        public string Nome { get; set; }
     }
 }

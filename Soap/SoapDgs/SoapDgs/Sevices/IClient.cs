@@ -17,7 +17,7 @@ namespace SoapDgs.Sevices
         /// </summary>
         /// <returns>Todas as pessoas infetadas</returns>
         [OperationContract]
-        Person Get();
+        Infectado Get();
 
         /// <summary>
         /// Metodo para mostrar pessoas que entararm em contaco com pessoas infetadas
@@ -25,7 +25,7 @@ namespace SoapDgs.Sevices
         /// <param name="idPerson"></param>
         /// <returns>Lista de pessoas infetadas por uma determinada pessoa</returns>
         [OperationContract]
-        List<Person> GetAll(int idPerson);
+        List<Infectado> GetAll(int idPerson);
 
         /// <summary>
         /// Metodo para adicionar pessoa infetada
@@ -41,6 +41,6 @@ namespace SoapDgs.Sevices
         /// <param name="idPerson"></param>
         /// <returns>Adiciona uma nova lista lista de pessoas que entraram em contacto com uma pessoa infetada</returns>
         [OperationContract]
-        void IndicateInfetionList(List<Person> list);
+        void IndicateInfetionList(List<Infectado> list);
     }
 }

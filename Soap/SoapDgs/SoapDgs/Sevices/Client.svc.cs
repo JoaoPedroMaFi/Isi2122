@@ -12,12 +12,12 @@ namespace SoapDgs.Sevices
     // OBSERVAÇÃO: Para iniciar o cliente de teste do WCF para testar esse serviço, selecione Client.svc ou Client.svc.cs no Gerenciador de Soluções e inicie a depuração.
     public class Client : IClient
     {
-        public Person Get()
+        public Infectado Get()
         {
             throw new NotImplementedException();
         }
 
-        public List<Person> GetAll(int idPerson)
+        public List<Infectado> GetAll(int idPerson)
         {
             throw new NotImplementedException();
         }
@@ -25,34 +25,10 @@ namespace SoapDgs.Sevices
         public void IndicateInfetion(string firstName, string lastName, int idEquipa)
         {
             InsertNewInfected(firstName, lastName, idEquipa);
-            //string strCon = @"server=localhost;user id=root;database=mydb_isi";
-
-
-            //try
-            //{
-            //    MySqlConnection connection = new MySqlConnection(strCon);
-            //    string strSQL = "INSERT INTO INFECTADO (FIRSTNAME,LASTNAME, IDEQUIPA) VALUES(@FIRSTNAME,@LASTANAME, @IDEQUIPA)";
-
-            //    MySqlCommand command = new MySqlCommand(strSQL, connection);
-            //    command.Parameters.AddWithValue("@FIRSTNAME", firstName);
-            //    command.Parameters.AddWithValue("@LASTNAME", lastName);
-            //    command.Parameters.AddWithValue("@IDEQUIPA", idEquipa);
-
-            //    connection.Open();
-            //    command.ExecuteNonQuery();
-            //    connection.Close();
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw new Exception("Error: " + ex);
-
-            //}
-
-
 
         }
 
-        public void IndicateInfetionList(List<Person> list)
+        public void IndicateInfetionList(List<Infectado> list)
         {
             throw new NotImplementedException();
         }
