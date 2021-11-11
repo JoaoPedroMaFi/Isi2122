@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\databaseConstruction",
     "\\Soap",
-    "\\Soap\\SoapDgs",
-    "\\Soap\\SoapDgs\\SoapDgs",
-    "\\Soap\\SoapDgs\\SoapDgs\\Models"
+    "\\Soap\\SoapDgs"
   ],
   "PreviewInSolutionExplorer": false
 }

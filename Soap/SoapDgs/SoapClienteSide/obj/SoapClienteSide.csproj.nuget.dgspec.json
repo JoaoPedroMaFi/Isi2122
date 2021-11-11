@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj": {}
+    "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj": {
+    "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj",
+        "projectUniqueName": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj",
         "projectName": "SoapClienteSide",
-        "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\Soap\\SoapDgs\\SoapClienteSide\\obj\\",
+        "projectPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Soap\\SoapDgs\\SoapClienteSide\\SoapClienteSide.csproj",
+        "packagesPath": "C:\\Users\\freak\\.nuget\\packages\\",
+        "outputPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Soap\\SoapDgs\\SoapClienteSide\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\freak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

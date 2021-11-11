@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SoapClienteSide
 {
-    public partial class Form1 : Form
+    public partial class InserirSuspeitos : Form
     {
-        public Form1()
+        public InserirSuspeitos()
         {
             InitializeComponent();
         }
@@ -21,6 +21,13 @@ namespace SoapClienteSide
         {
             InserirSuspeitos inserirSuspeitos = new();
             inserirSuspeitos.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new();
+            f1.Show();
             this.Hide();
         }
     }
