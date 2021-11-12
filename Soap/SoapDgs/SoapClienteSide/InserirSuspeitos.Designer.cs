@@ -35,9 +35,9 @@ namespace SoapClienteSide
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.idSus = new System.Windows.Forms.TextBox();
+            this.nomeSus = new System.Windows.Forms.TextBox();
+            this.apelidoSus = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -96,35 +96,35 @@ namespace SoapClienteSide
             this.label4.TabIndex = 5;
             this.label4.Text = "Apelido";
             // 
-            // textBox1
+            // idSus
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 23);
-            this.textBox1.TabIndex = 6;
+            this.idSus.Location = new System.Drawing.Point(157, 72);
+            this.idSus.Name = "idSus";
+            this.idSus.Size = new System.Drawing.Size(113, 23);
+            this.idSus.TabIndex = 6;
             // 
-            // textBox2
+            // nomeSus
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 23);
-            this.textBox2.TabIndex = 7;
+            this.nomeSus.Location = new System.Drawing.Point(157, 120);
+            this.nomeSus.Name = "nomeSus";
+            this.nomeSus.Size = new System.Drawing.Size(112, 23);
+            this.nomeSus.TabIndex = 7;
             // 
-            // textBox3
+            // apelidoSus
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 168);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(113, 23);
-            this.textBox3.TabIndex = 8;
+            this.apelidoSus.Location = new System.Drawing.Point(157, 168);
+            this.apelidoSus.Name = "apelidoSus";
+            this.apelidoSus.Size = new System.Drawing.Size(113, 23);
+            this.apelidoSus.TabIndex = 8;
             // 
             // InserirSuspeitos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(380, 314);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.apelidoSus);
+            this.Controls.Add(this.nomeSus);
+            this.Controls.Add(this.idSus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -146,8 +146,8 @@ namespace SoapClienteSide
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox idSus;
+        private System.Windows.Forms.TextBox nomeSus;
+        private System.Windows.Forms.TextBox apelidoSus;
     }
 }

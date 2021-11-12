@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
+
 namespace SoapDgs.Sevices
 {
     // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da classe "Client" no arquivo de código, svc e configuração ao mesmo tempo.
@@ -24,7 +25,7 @@ namespace SoapDgs.Sevices
 
         public void IndicateInfetion(string firstName, string lastName, int idEquipa)
         {
-            InsertNewInfected(firstName, lastName, idEquipa);
+            //InsertNewInfected(firstName, lastName, idEquipa);
 
         }
 
@@ -33,10 +34,26 @@ namespace SoapDgs.Sevices
             throw new NotImplementedException();
         }
 
-        private bool InsertNewInfected(string name, string lastname, int idEquipa)
+        public bool InsertNewInfectedClient(string name, string lastName, int idEquipa)
         {
-
+            string name1, lastName1;
+            int idEquipa1;
+            name1 = name;
+            lastName1 = lastName;
+            idEquipa1 = idEquipa;
+            //InsertNewInfected(name1, lastName1, idEquipa1);
             return true;
+        }
+
+        public void InsertNewSuspectClient(string name, string lastName, int id, int idInfetado)
+        {
+            string name1, lastName1;
+            int id1;
+            name1 = name;
+            lastName1 = lastName;
+            id1 = id;
+            //InsertNewInfected(name1, lastName1, id1);
+            
         }
     }
 }

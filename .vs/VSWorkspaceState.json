@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\databaseConstruction",
-    "\\Soap",
     "\\Soap\\SoapDgs"
   ],
+  "SelectedNode": "\\FileImporter",
   "PreviewInSolutionExplorer": false
 }

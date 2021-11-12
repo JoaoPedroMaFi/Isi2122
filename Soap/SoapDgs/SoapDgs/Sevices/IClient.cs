@@ -42,5 +42,24 @@ namespace SoapDgs.Sevices
         /// <returns>Adiciona uma nova lista lista de pessoas que entraram em contacto com uma pessoa infetada</returns>
         [OperationContract]
         void IndicateInfetionList(List<Infectado> list);
+
+        /// <summary>
+        /// Inserir um novo infetado na base de dados
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="idEquipa"></param>
+        [OperationContract]
+        bool InsertNewInfectedClient(string firstName, string lastName, int idEquipa);
+
+        /// <summary>
+        /// Inserir um novo suspeito na base de dados
+        /// </summary>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="id"></param>
+        /// <param name="idInfetado"></param>
+        [OperationContract]
+        void InsertNewSuspectClient(string firstName, string lastName, int id, int idInfetado);
     }
 }

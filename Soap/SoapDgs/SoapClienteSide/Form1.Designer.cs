@@ -34,15 +34,15 @@ namespace SoapClienteSide
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.idEquipa = new System.Windows.Forms.TextBox();
+            this.nomeEquipa = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.idInfetado = new System.Windows.Forms.TextBox();
+            this.nomeInfetado = new System.Windows.Forms.TextBox();
+            this.apelidoInfetado = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -59,7 +59,7 @@ namespace SoapClienteSide
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(78, 9);
+            this.label1.Location = new System.Drawing.Point(92, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(206, 21);
             this.label1.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace SoapClienteSide
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 81);
+            this.label3.Location = new System.Drawing.Point(23, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(18, 15);
             this.label3.TabIndex = 4;
@@ -92,19 +92,20 @@ namespace SoapClienteSide
             this.label4.TabIndex = 5;
             this.label4.Text = "Nome";
             // 
-            // textBox1
+            // idEquipa
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(54, 23);
-            this.textBox1.TabIndex = 6;
+            this.idEquipa.Location = new System.Drawing.Point(77, 93);
+            this.idEquipa.Name = "idEquipa";
+            this.idEquipa.Size = new System.Drawing.Size(54, 23);
+            this.idEquipa.TabIndex = 6;
+            this.idEquipa.TextChanged += new System.EventHandler(this.idEquipa_TextChanged);
             // 
-            // textBox2
+            // nomeEquipa
             // 
-            this.textBox2.Location = new System.Drawing.Point(78, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(52, 23);
-            this.textBox2.TabIndex = 7;
+            this.nomeEquipa.Location = new System.Drawing.Point(78, 130);
+            this.nomeEquipa.Name = "nomeEquipa";
+            this.nomeEquipa.Size = new System.Drawing.Size(52, 23);
+            this.nomeEquipa.TabIndex = 7;
             // 
             // label5
             // 
@@ -142,41 +143,41 @@ namespace SoapClienteSide
             this.label8.TabIndex = 11;
             this.label8.Text = "Apelido";
             // 
-            // textBox3
+            // idInfetado
             // 
-            this.textBox3.Location = new System.Drawing.Point(274, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 23);
-            this.textBox3.TabIndex = 12;
+            this.idInfetado.Location = new System.Drawing.Point(274, 91);
+            this.idInfetado.Name = "idInfetado";
+            this.idInfetado.Size = new System.Drawing.Size(78, 23);
+            this.idInfetado.TabIndex = 12;
             // 
-            // textBox4
+            // nomeInfetado
             // 
-            this.textBox4.Location = new System.Drawing.Point(274, 135);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 23);
-            this.textBox4.TabIndex = 13;
+            this.nomeInfetado.Location = new System.Drawing.Point(274, 135);
+            this.nomeInfetado.Name = "nomeInfetado";
+            this.nomeInfetado.Size = new System.Drawing.Size(78, 23);
+            this.nomeInfetado.TabIndex = 13;
             // 
-            // textBox5
+            // apelidoInfetado
             // 
-            this.textBox5.Location = new System.Drawing.Point(274, 175);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 23);
-            this.textBox5.TabIndex = 14;
+            this.apelidoInfetado.Location = new System.Drawing.Point(274, 175);
+            this.apelidoInfetado.Name = "apelidoInfetado";
+            this.apelidoInfetado.Size = new System.Drawing.Size(78, 23);
+            this.apelidoInfetado.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(391, 301);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.apelidoInfetado);
+            this.Controls.Add(this.nomeInfetado);
+            this.Controls.Add(this.idInfetado);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nomeEquipa);
+            this.Controls.Add(this.idEquipa);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -196,15 +197,15 @@ namespace SoapClienteSide
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox idEquipa;
+        private System.Windows.Forms.TextBox nomeEquipa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox idInfetado;
+        private System.Windows.Forms.TextBox nomeInfetado;
+        private System.Windows.Forms.TextBox apelidoInfetado;
     }
 }
 

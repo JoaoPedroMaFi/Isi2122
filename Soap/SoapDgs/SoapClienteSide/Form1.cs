@@ -19,9 +19,15 @@ namespace SoapClienteSide
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //InsertNewInfected();
             InserirSuspeitos inserirSuspeitos = new();
             inserirSuspeitos.Show();
             this.Hide();
+        }
+
+        private void idEquipa_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
