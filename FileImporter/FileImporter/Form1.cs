@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using FileHandler;
+//using FileHandlerClass;
 
 namespace FileImporter
 {
@@ -25,7 +25,7 @@ namespace FileImporter
             //FileReader();
         }
 
-        private string GetFilePath()
+        public static string GetFilePath()
         {
             //string fileContent, filePath;
 
@@ -46,6 +46,10 @@ namespace FileImporter
                 //Get the path of specified file
                 filePath = openFileDialog1.FileName;
 
+                //Passing path to FileHandlerClass
+                FileHandlerClass fh = new(filePath);
+                //fh.filePATH = filePath;
+
                 ////Read the contents of the file into a stream
                 //var fileStream = openFileDialog1.OpenFile();
 
@@ -56,9 +60,10 @@ namespace FileImporter
             }
 
             //debug
-            MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
+            //MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
             //openFileDialog1.ShowDialog();
 
+            
             return filePath;
         }
     }
