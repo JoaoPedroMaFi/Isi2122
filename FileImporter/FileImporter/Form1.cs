@@ -22,7 +22,6 @@ namespace FileImporter
         private void button1_Click(object sender, EventArgs e)
         {
             GetFilePath();
-            //FileReader();
         }
 
         public static string GetFilePath()
@@ -37,7 +36,7 @@ namespace FileImporter
             OpenFileDialog openFileDialog1 = new();
 
             //Filter file types
-            openFileDialog1.Filter = " *.xml|*.json";
+            openFileDialog1.Filter = "Json files (.json)|*.json|XML files (.xml)|*.xml";
             openFileDialog1.FilterIndex = 1;
             openFileDialog1.FilterIndex = 2;
 
