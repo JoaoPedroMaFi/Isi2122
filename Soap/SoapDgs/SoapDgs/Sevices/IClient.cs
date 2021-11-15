@@ -33,7 +33,7 @@ namespace SoapDgs.Sevices
         /// <param name="idPerson"></param>
         /// <returns>Adiciona uma nova pessoa infetada</returns>
         [OperationContract]
-        void IndicateInfetion(string firstName, string lastName, int idEquipa);
+        void IndicateInfetion(string equipaName, string firstName, string lastName, int idEquipa);
 
         /// <summary>
         /// Metodo para adicionar lista de pessoas que entraram em contacto com uma pessoa infetada

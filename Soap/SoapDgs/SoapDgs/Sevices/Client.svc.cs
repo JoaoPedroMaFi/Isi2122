@@ -1,10 +1,7 @@
 ﻿using SoapDgs.Models;
+using SoapDgs.Database;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
 
 
 namespace SoapDgs.Sevices
@@ -23,12 +20,14 @@ namespace SoapDgs.Sevices
             throw new NotImplementedException();
         }
 
-        public void IndicateInfetion(string firstName, string lastName, int idEquipa)
+        public void IndicateInfetion(string equipaName,string firstName, string lastName, int idEquipa)
         {
             //InsertNewInfected(firstName, lastName, idEquipa);
+            
+            InsertTeam(equipaName);
+            InsertInfectedPerson(firstName, lastName);
 
         }
-
         public void IndicateInfetionList(List<Infectado> list)
         {
             throw new NotImplementedException();

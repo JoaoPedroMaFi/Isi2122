@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = SoapClienteSide
-build_property.ProjectDir = D:\IPCA\3ano\1semestre\isi\tp1Git\Soap\SoapDgs\SoapClienteSide\
+build_property.ProjectDir = C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\Soap\SoapDgs\SoapClienteSide\

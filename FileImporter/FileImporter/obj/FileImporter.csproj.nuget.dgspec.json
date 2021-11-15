@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\FileImporter\\FileImporter\\FileImporter.csproj": {}
+    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj": {}
   },
   "projects": {
-    "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\FileImporter\\FileImporter\\FileImporter.csproj": {
+    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\FileImporter\\FileImporter\\FileImporter.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj",
         "projectName": "FileImporter",
-        "projectPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\FileImporter\\FileImporter\\FileImporter.csproj",
-        "packagesPath": "C:\\Users\\freak\\.nuget\\packages\\",
-        "outputPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\FileImporter\\FileImporter\\obj\\",
+        "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\freak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
