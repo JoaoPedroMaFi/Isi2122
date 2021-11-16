@@ -7,8 +7,8 @@
   "data":"09-09-2021",
   "respeitou":"true"
     }, 
-}{
-   "isolado": {
+
+   "isolado1": {
    "idequipa":"1",
    "idpessoa": "2",
   "firstname": "aasatua",
@@ -16,13 +16,12 @@
   "data":"09-09-2021",
   "respeitou":"true"
     }, 
-}{
-   "isolado": {
+   "isolado2": {
    "idequipa":"2",
    "idpessoa": "3",
   "firstname": "adfsaftua",
   "laststname": "primaasdffddequatro",
   "data":"09-09-2021",
   "respeitou":"false"
-    }, 
+    } 
 }
