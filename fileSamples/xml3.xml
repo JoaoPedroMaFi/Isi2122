@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<isolados data="2021-09-31">
+	<isolado id="1">
+		<idequipa>1</idequipa>
+		<firstname>atua</firstname>
+		<laststname>primadequatro</laststname>
+		<respeitou>true</respeitou>
+	</isolado>
+	<isolado id="2">
+		<idequipa>1</idequipa>
+		<firstname>atdsasaua</firstname>
+		<laststname>primasdasddadequatro</laststname>
+		<respeitou>false</respeitou>
+	</isolado>
+</isolados>
