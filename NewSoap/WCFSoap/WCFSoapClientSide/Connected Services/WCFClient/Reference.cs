@@ -20,7 +20,7 @@ namespace WCFClient
         
         private string FirstnameField;
         
-        private string IdequipaField;
+        private int IdequipaField;
         
         private int IdpessoaField;
         
@@ -40,7 +40,7 @@ namespace WCFClient
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Idequipa
+        public int Idequipa
         {
             get
             {
@@ -79,6 +79,43 @@ namespace WCFClient
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Equipa", Namespace="http://schemas.datacontract.org/2004/07/WCFSoap.Models")]
+    public partial class Equipa : object
+    {
+        
+        private int IdequipaField;
+        
+        private string NomeField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Idequipa
+        {
+            get
+            {
+                return this.IdequipaField;
+            }
+            set
+            {
+                this.IdequipaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nome
+        {
+            get
+            {
+                return this.NomeField;
+            }
+            set
+            {
+                this.NomeField = value;
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WCFClient.IClient")]
     public interface IClient
@@ -88,13 +125,13 @@ namespace WCFClient
         System.Threading.Tasks.Task<WCFClient.Infectado> GetAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/GetAll", ReplyAction="http://tempuri.org/IClient/GetAllResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Infectado>> GetAllAsync(int idPerson);
+        System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllAsync(int idPerson);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/IndicateInfetion", ReplyAction="http://tempuri.org/IClient/IndicateInfetionResponse")]
-        System.Threading.Tasks.Task IndicateInfetionAsync(string equipaName, string firstName, string lastName, int idEquipa);
+        System.Threading.Tasks.Task IndicateInfetionAsync(WCFClient.Equipa equipa, WCFClient.Infectado infectado);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/IndicateInfetionList", ReplyAction="http://tempuri.org/IClient/IndicateInfetionListResponse")]
-        System.Threading.Tasks.Task IndicateInfetionListAsync(System.Collections.Generic.List<WCFClient.Infectado> list);
+        System.Threading.Tasks.Task IndicateInfetionListAsync(WCFClient.Infectado[] list);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/InsertNewInfectedClient", ReplyAction="http://tempuri.org/IClient/InsertNewInfectedClientResponse")]
         System.Threading.Tasks.Task<bool> InsertNewInfectedClientAsync(string firstName, string lastName, int idEquipa);
@@ -158,17 +195,17 @@ namespace WCFClient
             return base.Channel.GetAsync();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Infectado>> GetAllAsync(int idPerson)
+        public System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllAsync(int idPerson)
         {
             return base.Channel.GetAllAsync(idPerson);
         }
         
-        public System.Threading.Tasks.Task IndicateInfetionAsync(string equipaName, string firstName, string lastName, int idEquipa)
+        public System.Threading.Tasks.Task IndicateInfetionAsync(WCFClient.Equipa equipa, WCFClient.Infectado infectado)
         {
-            return base.Channel.IndicateInfetionAsync(equipaName, firstName, lastName, idEquipa);
+            return base.Channel.IndicateInfetionAsync(equipa, infectado);
         }
         
-        public System.Threading.Tasks.Task IndicateInfetionListAsync(System.Collections.Generic.List<WCFClient.Infectado> list)
+        public System.Threading.Tasks.Task IndicateInfetionListAsync(WCFClient.Infectado[] list)
         {
             return base.Channel.IndicateInfetionListAsync(list);
         }

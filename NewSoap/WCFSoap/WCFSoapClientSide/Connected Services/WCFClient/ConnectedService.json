@@ -4,8 +4,8 @@
       "http://localhost:51497/Services/Client.svc?singleWsdl"
     ],
     "collectionTypes": [
-      "System.Collections.Generic.Dictionary`2",
-      "System.Collections.Generic.List`1"
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
     ],
     "namespaceMappings": [
       "*, WCFClient"

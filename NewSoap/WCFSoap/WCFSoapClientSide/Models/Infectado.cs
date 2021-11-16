@@ -26,6 +26,6 @@ namespace WCFSoapClientSide.Models
         /// <summary>
         /// Id da equipa que detetou o infetado
         /// </summary>
-        public string Idequipa { get; set; }
+        public int Idequipa { get; set; }
     }
 }

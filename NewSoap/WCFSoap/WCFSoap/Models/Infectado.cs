@@ -35,6 +35,6 @@ namespace WCFSoap.Models
         /// Id da equipa que detetou o infetado
         /// </summary>
         [DataMember]
-        public string Idequipa { get; set; }
+        public int Idequipa { get; set; }
     }
 }

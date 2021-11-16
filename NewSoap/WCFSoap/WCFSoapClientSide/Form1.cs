@@ -27,12 +27,13 @@ namespace WCFSoapClientSide
         private void button1_Click(object sender, EventArgs e)
         {
             WCFClient.ClientClient client = new();
-            Equipa equipa = new();
+            WCFClient.Equipa equipa = new();
             equipa.Nome = nomeEquipa.Text;
-            equipa.Idequipa = Int32.Parse(idEquipaLabel.Text) ;
-            Infectado infectado = new();
+            equipa.Idequipa = Int32.Parse(idEquipaLabel.Text);
+            WCFClient.Infectado infectado = new();
             infectado.Firstname = firstNameInfetado.Text;
             infectado.Laststname = lastNameInfetado.Text;
+            infectado.Idequipa = Int32.Parse(idEquipaLabel.Text);
             client.IndicateInfetionAsync(equipa, infectado);
 
         }

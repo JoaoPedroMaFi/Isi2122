@@ -43,7 +43,7 @@ namespace WCFSoap.Services
             infected.idinfetado = infectado.Idpessoa;
             infected.firstname = infectado.Firstname;
             infected.lastname = infectado.Laststname;
-            infected.idequipa = Int32.Parse(infectado.Idequipa);
+            infected.idequipa = infectado.Idequipa;
             db.infetadoes.Add(infected);
             db.SaveChanges();
 
