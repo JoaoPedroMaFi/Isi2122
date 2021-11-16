@@ -1,0 +1,12 @@
+  <!--elements-->
+  <!ELEMENT isolados (isolado+)>
+  <!ELEMENT isolado (idequipa, firstname, laststname, respeitou)>
+  <!ELEMENT idequipa (#PCDATA)>
+  <!ELEMENT firstname (#PCDATA)>
+  <!ELEMENT laststname (#PCDATA)>
+  <!ELEMENT respeitou (#PCDATA)>
+
+
+  <!--attributes-->
+  <!ATTLIST isolados data CDATA #REQUIRED>
+  <!ATTLIST isolado id CDATA #REQUIRED>

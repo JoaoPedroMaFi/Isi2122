@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\NewSoap",
+    "\\NewSoap\\WCFSoap",
     "\\Soap\\SoapDgs"
   ],
-  "SelectedNode": "\\FileImporter",
+  "SelectedNode": "\\NewSoap\\WCFSoap\\WCFSoap.sln",
   "PreviewInSolutionExplorer": false
 }
