@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSoap", "WCFSoap\WCFSoap.csproj", "{76BBE8ED-FA78-4842-B900-35999447FD1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSoapClientSide", "WCFSoapClientSide\WCFSoapClientSide.csproj", "{2FD76893-495A-4564-9B5D-3A633BE155D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76BBE8ED-FA78-4842-B900-35999447FD1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BBE8ED-FA78-4842-B900-35999447FD1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BBE8ED-FA78-4842-B900-35999447FD1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BBE8ED-FA78-4842-B900-35999447FD1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD76893-495A-4564-9B5D-3A633BE155D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD76893-495A-4564-9B5D-3A633BE155D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD76893-495A-4564-9B5D-3A633BE155D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD76893-495A-4564-9B5D-3A633BE155D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9A6F84D-7074-4894-A341-F90E3D30ADE3}
+	EndGlobalSection
+EndGlobal

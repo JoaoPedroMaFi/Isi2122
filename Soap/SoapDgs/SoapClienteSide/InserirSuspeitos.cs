@@ -26,7 +26,7 @@ namespace SoapClienteSide
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 f1 = new();
+            Ocorrencia f1 = new();
             f1.Show();
             this.Hide();
         }

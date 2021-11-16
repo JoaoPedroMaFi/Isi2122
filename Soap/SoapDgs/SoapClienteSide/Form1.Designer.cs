@@ -1,7 +1,7 @@
 ﻿
 namespace SoapClienteSide
 {
-    partial class Form1
+    partial class Ocorrencia
     {
         /// <summary>
         ///  Required designer variable.
@@ -98,7 +98,6 @@ namespace SoapClienteSide
             this.idEquipa.Name = "idEquipa";
             this.idEquipa.Size = new System.Drawing.Size(54, 23);
             this.idEquipa.TabIndex = 6;
-            this.idEquipa.TextChanged += new System.EventHandler(this.idEquipa_TextChanged);
             // 
             // nomeEquipa
             // 
@@ -164,7 +163,7 @@ namespace SoapClienteSide
             this.apelidoInfetado.Size = new System.Drawing.Size(78, 23);
             this.apelidoInfetado.TabIndex = 14;
             // 
-            // Form1
+            // Ocorrencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -183,7 +182,7 @@ namespace SoapClienteSide
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Ocorrencia";
             this.Text = "ClientSoap";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Mybd_soapModelStoreContainer" CdmEntityContainer="Mybd_soapEntities">
+    <EntitySetMapping Name="equipas">
+      <EntityTypeMapping TypeName="Mybd_soapModel.equipa">
+        <MappingFragment StoreEntitySet="equipa">
+          <ScalarProperty Name="idequipa" ColumnName="idequipa" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="infetadoes">
+      <EntityTypeMapping TypeName="Mybd_soapModel.infetado">
+        <MappingFragment StoreEntitySet="infetado">
+          <ScalarProperty Name="idinfetado" ColumnName="idinfetado" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="idequipa" ColumnName="idequipa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suspeitoes">
+      <EntityTypeMapping TypeName="Mybd_soapModel.suspeito">
+        <MappingFragment StoreEntitySet="suspeito">
+          <ScalarProperty Name="idsuspeito" ColumnName="idsuspeito" />
+          <ScalarProperty Name="idinfetado" ColumnName="idinfetado" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
