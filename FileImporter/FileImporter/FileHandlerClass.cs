@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
+using FileImporter.Models;
 
 namespace FileImporter
 {
@@ -41,7 +42,7 @@ namespace FileImporter
             }
             else if (ext == ".xml")
             {
-                MessageBox.Show("entrei no xml");
+                //MessageBox.Show("entrei no xml");
                 xmlUploader(fp);
             }
             else
@@ -55,8 +56,8 @@ namespace FileImporter
         //MessageBox.Show("File Content at path: " + fp);
 
         /// <summary>
-        /// uploads xml files
-        /// sources: https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0
+        /// uploads xml files to wherever
+        /// sources: aulas
         ///          https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathdocument?view=net-5.0
         /// </summary>
         /// <param name="filepath"></param>
@@ -66,14 +67,28 @@ namespace FileImporter
             XPathNavigator nav;
             XPathNodeIterator node;
             string title;
+            Isolado isolado = new();
+
 
             //using (FileStream stream = File.Open(filepath, FileMode.Open))
            
             doc = new(filepath);
             nav = doc.CreateNavigator();
-            title = "Read file";
-            node = nav.Select("/");
+
+            //Read the whole file
+            //title = "Read file";
+            //node = nav.Select("/");
+            //ShowNode(title,node);
+
+            //select date
+            title = "Select date";
+            node = nav.Select("/*/@data");
             ShowNode(title,node);
+
+            //Assign date to the object
+            isolado.data = (node.Current.Value).ToString();
+            //debug
+            MessageBox.Show($"Data no objeto: {isolado.data}");
            
 
         }
