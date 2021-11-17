@@ -101,9 +101,10 @@ namespace FileImporter
 
             title = "Select id isolado";
             node2 = nav.Select("/isolados/isolado/@id");
+
             WorkAllNodes(title, node2, isolado, nav);
 
-            
+
             //pegar no valor do id e fazer xpath dentro do id para retirar o resto dos valores
 
 
@@ -150,8 +151,13 @@ namespace FileImporter
                 MessageBox.Show(node.Current.OuterXml);
 
 
-                //---------------
-                //
+                //-----------------
+                //retirar firstname
+                //-----------------
+
+                node = nav.Select($"//isolado[@id='{isolado.idisolado}']/firstname");
+                isolado.firstname = (node.Current.Value).ToString();
+                MessageBox.Show($"firstname no objeto: {isolado.firstname}");
             }
         }
     }
