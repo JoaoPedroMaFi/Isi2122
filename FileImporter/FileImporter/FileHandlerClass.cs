@@ -141,12 +141,17 @@ namespace FileImporter
                 //Retirar id equipa
                 //-----------------
 
-                title = "Select id equipa";
-                node = nav.Select($"//isolado[@id='{isolado.idisolado}']/idequipa"); //esta a ir buscar tudo apos o idequipa, incluindo o ideq
-                //Obter id e fazer magia para entrar no object 
-                isolado.idequipa = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim());
+                //title = "Select id equipa";
+                node = nav.Select($"//isolado[@id='{isolado.idisolado}']/idequipa"); 
+                //Obter id e fazer magia para entrar no object
+                isolado.idequipa = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim().Remove(1)); //remove pq xpath ta bugado, esta a ir buscar tudo apos o idequipa, incluindo o ideq
+                
                 MessageBox.Show($"idequipa no objeto: {isolado.idequipa}");
                 MessageBox.Show(node.Current.OuterXml);
+
+
+                //---------------
+                //
             }
         }
     }
