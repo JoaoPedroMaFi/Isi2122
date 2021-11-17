@@ -18,12 +18,6 @@ namespace WCFSoapClientSide
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-           // client.IndicateInfetionAsync(equipaName,);
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             WCFClient.ClientClient client = new();
@@ -35,6 +29,14 @@ namespace WCFSoapClientSide
             infectado.Laststname = lastNameInfetado.Text;
             infectado.Idequipa = Int32.Parse(idEquipaLabel.Text);
             client.IndicateInfetionAsync(equipa, infectado);
+
+        }
+
+        private void ButtonAllInfecteds_Click(object sender, EventArgs e)
+        {
+            Infecteds newform = new();
+            newform.ShowDialog();
+            this.Hide();
 
         }
     }

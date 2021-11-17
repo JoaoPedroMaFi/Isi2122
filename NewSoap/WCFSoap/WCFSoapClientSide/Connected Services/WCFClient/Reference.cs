@@ -121,8 +121,8 @@ namespace WCFClient
     public interface IClient
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/Get", ReplyAction="http://tempuri.org/IClient/GetResponse")]
-        System.Threading.Tasks.Task<WCFClient.Infectado> GetAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/GetAllInfected", ReplyAction="http://tempuri.org/IClient/GetAllInfectedResponse")]
+        System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllInfectedAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/GetAll", ReplyAction="http://tempuri.org/IClient/GetAllResponse")]
         System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllAsync(int idPerson);
@@ -190,9 +190,9 @@ namespace WCFClient
         {
         }
         
-        public System.Threading.Tasks.Task<WCFClient.Infectado> GetAsync()
+        public System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllInfectedAsync()
         {
-            return base.Channel.GetAsync();
+            return base.Channel.GetAllInfectedAsync();
         }
         
         public System.Threading.Tasks.Task<WCFClient.Infectado[]> GetAllAsync(int idPerson)

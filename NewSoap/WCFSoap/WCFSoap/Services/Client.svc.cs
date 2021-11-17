@@ -9,16 +9,37 @@ using WCFSoap.Models;
 
 namespace WCFSoap.Services
 {
-    
+
     // OBSERVAÇÃO: Você pode usar o comando "Renomear" no menu "Refatorar" para alterar o nome da classe "Client" no arquivo de código, svc e configuração ao mesmo tempo.
     // OBSERVAÇÃO: Para iniciar o cliente de teste do WCF para testar esse serviço, selecione Client.svc ou Client.svc.cs no Gerenciador de Soluções e inicie a depuração.
     public class Client : IClient
     {
 
         Mybd_soapEntities db = new Mybd_soapEntities();
-        public Infectado Get()
+        public List<Infectado> GetAllInfected()
         {
-            throw new NotImplementedException();
+
+
+            List<Infectado> infetados = new List<Infectado>();
+
+            foreach (infetado inf in db.infetadoes)
+            {
+                Infectado infetadoClasse = new Infectado();
+                infetadoClasse.Firstname = inf.firstname;
+                infetadoClasse.Laststname = inf.lastname;
+                infetados.Add(infetadoClasse);
+
+            }
+
+            return infetados;
+
+            //var list = from inf in db.infetadoes
+            //           select new
+            //           {
+            //               inf.firstname,
+            //               inf.lastname
+            //           };
+            //return list.ToList();
         }
 
         public List<Infectado> GetAll(int idPerson)

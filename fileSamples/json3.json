@@ -1,28 +1,58 @@
+//{
+//  "isolado": {
+//    "idequipa": "1",
+//    "idpessoa": "1",
+//    "firstname": "atua",
+//    "laststname": "primadequatro",
+//    "data": "09-09-2021",
+//    "respeitou": "true"
+//  },
+//} {
+//  "isolado": {
+//    "idequipa": "1",
+//    "idpessoa": "2",
+//    "firstname": "aasatua",
+//    "laststname": "prisaasmadequatro",
+//    "data": "09-09-2021",
+//    "respeitou": "true"
+//  },
+//} {
+//  "isolado": {
+//    "idequipa": "2",
+//    "idpessoa": "3",
+//    "firstname": "adfsaftua",
+//    "laststname": "primaasdffddequatro",
+//    "data": "09-09-2021",
+//    "respeitou": "false"
+//  },
+//}
+
+
 {
-   "isolado": {
-   "idequipa":"1",
-   "idpessoa": "1",
-  "firstname": "atua",
-  "laststname": "primadequatro",
-  "data":"09-09-2021",
-  "respeitou":"true"
-    }, 
-}{
-   "isolado": {
-   "idequipa":"1",
-   "idpessoa": "2",
-  "firstname": "aasatua",
-  "laststname": "prisaasmadequatro",
-  "data":"09-09-2021",
-  "respeitou":"true"
-    }, 
-}{
-   "isolado": {
-   "idequipa":"2",
-   "idpessoa": "3",
-  "firstname": "adfsaftua",
-  "laststname": "primaasdffddequatro",
-  "data":"09-09-2021",
-  "respeitou":"false"
-    }, 
+  "1": {
+    "idequipa": "1",
+    "idpessoa": "1",
+    "firstname": "atua",
+    "laststname": "primadequatro",
+    "data": "09-09-2021",
+    "respeitou": "true"
+  },
+
+  "2": {
+    "idequipa": "1",
+    "idpessoa": "2",
+    "firstname": "aasatua",
+    "laststname": "prisaasmadequatro",
+    "data": "09-09-2021",
+    "respeitou": "true"
+  },
+
+  "3": {
+    "idequipa": "2",
+    "idpessoa": "3",
+    "firstname": "adfsaftua",
+    "laststname": "primaasdffddequatro",
+    "data": "09-09-2021",
+    "respeitou": "false"
+  }
 }

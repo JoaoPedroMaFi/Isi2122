@@ -14,11 +14,11 @@ namespace WCFSoap.Services
     public interface IClient
     {
         /// <summary>
-        /// Metodo para mostrar pessoas infetadas
+        /// Metodo para mostrar todas as pessoas infetadas
         /// </summary>
         /// <returns>Todas as pessoas infetadas</returns>
         [OperationContract]
-        Infectado Get();
+        List<Infectado>GetAllInfected();
 
         /// <summary>
         /// Metodo para mostrar pessoas que entararm em contaco com pessoas infetadas

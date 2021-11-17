@@ -24,3 +24,5 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\New
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\bin\Debug\net5.0-windows\System.ServiceModel.dll
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\bin\Debug\net5.0-windows\System.ServiceModel.Security.dll
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.csproj.CopyComplete
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.csproj.AssemblyReference.cache
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.Infecteds.resources
