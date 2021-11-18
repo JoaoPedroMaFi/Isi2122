@@ -72,7 +72,7 @@ namespace FileImporter
 
             //using (FileStream stream = File.Open(filepath, FileMode.Open))
            
-            doc = new(filepath);
+            doc = new XPathDocument(filepath);
             nav = doc.CreateNavigator();
 
             //Read the whole file
@@ -87,12 +87,12 @@ namespace FileImporter
             //select date
             title = "Select date";
             node = nav.Select("/*/@data");
-            ShowNode(title,node);
+            ShowNode(title, node);
 
-            //Assign date to the object
-            isolado.data = (node.Current.Value).ToString();
-            //debug
-            MessageBox.Show($"Data no objeto: {isolado.data}");
+            ////Assign date to the object
+            //isolado.data = (node.Current.Value).ToString();
+            ////debug
+            //MessageBox.Show($"Data no objeto: {isolado.data}");
 
             //-----------------------------------------
             //Limpar/Resetar o node ou utilizar outro, para iterar sobre cada um
@@ -100,9 +100,11 @@ namespace FileImporter
             //nav.DeleteSelf();
 
             title = "Select id isolado";
-            node2 = nav.Select("/isolados/isolado/@id");
-
+            node2 = nav.Select("//isolado");
+            //node2.MoveNext();
+            //MessageBox.Show(node2.Current.Value);
             WorkAllNodes(title, node2, isolado, nav);
+
 
 
             //pegar no valor do id e fazer xpath dentro do id para retirar o resto dos valores
@@ -120,11 +122,59 @@ namespace FileImporter
                 MessageBox.Show(node.Current.OuterXml);
         }
 
+        //static void WorkAllNodes(string title, XPathNodeIterator node, Isolado isolado, XPathNavigator nav)
+        //{
+
+        //    // title
+        //    MessageBox.Show($"{title}\n  count:{ node.Count }");
+
+        //    // percorrer as varias entradas de isolado
+        //    while (node.MoveNext())
+        //    {
+        //        //------------------
+        //        //Retirar id isolado
+        //        //------------------
+
+        //        //Obter id e fazer magia para entrar no object 
+        //        isolado.Idisolado = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim());
+        //        MessageBox.Show($"idisolado no objeto: {isolado.Idisolado}");
+
+
+        //        //-----------------
+        //        //Retirar id equipa
+        //        //-----------------
+
+        //        //title = "Select id equipa";
+        //        node = nav.Select($"//isolado/idequipa");
+        //        MessageBox.Show(node.Current.ToString());
+        //        //Obter id e fazer magia para entrar no object
+        //        isolado.Idequipa = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim().Remove(1)); //remove pq xpath ta bugado, esta a ir buscar tudo apos o idequipa, incluindo o ideq
+
+        //        MessageBox.Show($"idequipa no objeto: {isolado.Idequipa}");
+        //        //MessageBox.Show(node.Current.OuterXml);
+
+
+        //        //-----------------
+        //        //retirar firstname
+        //        //-----------------
+
+        //        node = nav.Select($"//isolado/firstname"); 
+        //        MessageBox.Show(node.Current.ToString());
+        //        isolado.Firstname = (node.Current.Value);
+        //        MessageBox.Show($"firstname no objeto: {isolado.Firstname}");
+
+        //        //-----------------
+        //        //retirar lastname
+        //        //-----------------
+
+        //        node = nav.Select($"//isolado/laststname");
+        //        isolado.Lastname = (node.Current.Value);
+        //        MessageBox.Show($"firstname no objeto: {isolado.Lastname}");
+        //    }
+        //}
+
         static void WorkAllNodes(string title, XPathNodeIterator node, Isolado isolado, XPathNavigator nav)
         {
-            
-            // title
-            MessageBox.Show($"{title}\n  count:{ node.Count }");
 
             // percorrer as varias entradas de isolado
             while (node.MoveNext())
@@ -134,8 +184,10 @@ namespace FileImporter
                 //------------------
 
                 //Obter id e fazer magia para entrar no object 
-                isolado.idisolado = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim());
-                MessageBox.Show($"idisolado no objeto: {isolado.idisolado}");
+                node = nav.Select("//isolado/@id");
+                node.MoveNext();
+                isolado.Idisolado = Int32.Parse((node.Current.Value));
+                MessageBox.Show($"idisolado no objeto: {isolado.Idisolado}");
 
 
                 //-----------------
@@ -143,21 +195,50 @@ namespace FileImporter
                 //-----------------
 
                 //title = "Select id equipa";
-                node = nav.Select($"//isolado[@id='{isolado.idisolado}']/idequipa"); 
+                node = nav.Select($"//isolado/idequipa");
+                node.MoveNext();
                 //Obter id e fazer magia para entrar no object
-                isolado.idequipa = Int32.Parse((node.Current.Value).Replace('"', '\0').Trim().Remove(1)); //remove pq xpath ta bugado, esta a ir buscar tudo apos o idequipa, incluindo o ideq
-                
-                MessageBox.Show($"idequipa no objeto: {isolado.idequipa}");
-                MessageBox.Show(node.Current.OuterXml);
+                isolado.Idequipa = Int32.Parse((node.Current.Value)); //remove pq xpath ta bugado, esta a ir buscar tudo apos o idequipa, incluindo o ideq
+                MessageBox.Show($"idequipa no objeto: {isolado.Idequipa}");
+                //MessageBox.Show(node.Current.OuterXml);
 
 
                 //-----------------
                 //retirar firstname
                 //-----------------
 
-                node = nav.Select($"//isolado[@id='{isolado.idisolado}']/firstname");
-                isolado.firstname = (node.Current.Value).ToString();
-                MessageBox.Show($"firstname no objeto: {isolado.firstname}");
+                node = nav.Select($"//isolado/firstname");
+                node.MoveNext();
+                isolado.Firstname = (node.Current.Value);
+                MessageBox.Show($"firstname no objeto: {isolado.Firstname}");
+
+                //-----------------
+                //retirar lastname
+                //-----------------
+
+                node = nav.Select($"//isolado/lastname");
+                node.MoveNext();
+                isolado.Lastname = (node.Current.Value);
+                MessageBox.Show($"lastname no objeto: {isolado.Lastname}");
+
+
+                //-----------------
+                //retirar data
+                //-----------------
+
+                node = nav.Select("/*/@data");
+                node.MoveNext();
+                isolado.Firstname = (node.Current.Value);
+                MessageBox.Show($"data no objeto: {isolado.Data}");
+
+                //-----------------
+                //retirar respeito
+                //-----------------
+
+                node = nav.Select($"//isolado/respeitou");
+                node.MoveNext();
+                isolado.Lastname = (node.Current.Value);
+                MessageBox.Show($"estado de cumprimento no objeto: {isolado.Respeitou}");
             }
         }
     }

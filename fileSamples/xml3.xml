@@ -4,13 +4,13 @@
 	<isolado id="1">
 		<idequipa>1</idequipa>
 		<firstname>atua</firstname>
-		<laststname>primadequatro</laststname>
+    <lastname>primadequatro</lastname>
 		<respeitou>true</respeitou>
 	</isolado>
 	<isolado id="2">
 		<idequipa>1</idequipa>
 		<firstname>atdsasaua</firstname>
-		<laststname>primasdasddadequatro</laststname>
+    <lastname>primasdasddadequatro</lastname>
 		<respeitou>false</respeitou>
 	</isolado>
 </isolados>

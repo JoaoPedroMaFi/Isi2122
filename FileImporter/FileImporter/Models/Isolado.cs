@@ -11,33 +11,33 @@ namespace FileImporter.Models
         /// <summary>
         /// id of the inspectioned, infected person
         /// </summary>
-        public int idisolado { get; set; }
+        public int Idisolado { get; set; }
 
         /// <summary>
         /// id of the team inspecting that person
         /// </summary>
-        public int idequipa { get; set; }
+        public int Idequipa { get; set; }
 
         /// <summary>
         /// first name of the inspectioned person
         /// </summary>
-        public string firstname { get; set; }
+        public string Firstname { get; set; }
 
         /// <summary>
         /// last name of the inspectioned person
         /// </summary>
-        public string lastname { get; set; }
+        public string Lastname { get; set; }
 
         /// <summary>
         /// Date of the inspection
         /// </summary>
-        public string data { get; set; }
+        public string Data { get; set; }
 
         /// <summary>
         /// boolean dictating if the person was isolating or not
         /// true for yes, false for no
         /// </summary>
-        public bool respeitou { get; set; }
+        public bool Respeitou { get; set; }
 
 
     }

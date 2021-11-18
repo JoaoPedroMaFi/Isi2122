@@ -1,9 +1,9 @@
-  <!--elements-->
+<!--elements-->
   <!ELEMENT isolados (isolado+)>
-  <!ELEMENT isolado (idequipa, firstname, laststname, respeitou)>
+  <!ELEMENT isolado (idequipa, firstname, lastname, respeitou)>
   <!ELEMENT idequipa (#PCDATA)>
   <!ELEMENT firstname (#PCDATA)>
-  <!ELEMENT laststname (#PCDATA)>
+  <!ELEMENT lastname (#PCDATA)>
   <!ELEMENT respeitou (#PCDATA)>
 
 

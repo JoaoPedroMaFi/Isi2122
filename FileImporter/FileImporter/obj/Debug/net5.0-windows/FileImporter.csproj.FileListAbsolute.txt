@@ -23,7 +23,6 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\bin\Debug\net5.0-windows\FileImporter.dll
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\bin\Debug\net5.0-windows\ref\FileImporter.dll
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\bin\Debug\net5.0-windows\FileImporter.pdb
-C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.csproj.AssemblyReference.cache
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.Form1.resources
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.csproj.GenerateResource.cache
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,3 +33,4 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\ref\FileImporter.dll
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.pdb
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.genruntimeconfig.cache
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.csproj.AssemblyReference.cache
