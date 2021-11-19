@@ -28,25 +28,31 @@ namespace FileImporter
 
             Isolado isolado;
             List<Isolado> isolados = new();
-            Dictionary<int, Dictionary<string, string>>  all;
+            Dictionary<string, Dictionary<string, string>>  all;
 
 
-            all = JsonSerializer.Deserialize<Dictionary<int, Dictionary<string,string>>>(jsonString, new JsonSerializerOptions
+            all = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string,string>>>(jsonString, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });
-            foreach (dynamic i in all)
+
+            foreach (KeyValuePair<string, Dictionary<string,string>> dicc1 in all)
             {
-                MessageBox.Show($"data: {i.Idisolado}");
-                MessageBox.Show($"data: {i.Idequipa}");
-                MessageBox.Show($"data: {i.Firstname}");
-                MessageBox.Show($"data: {i.Lastname}");
-                MessageBox.Show($"data: {i.Data}");
-                MessageBox.Show($"data: {i.Respeitou}");
+                MessageBox.Show($"foreach de fora key{dicc1.Value}");
+                MessageBox.Show($"foreach de fora key{dicc1.Key}");
+                //pegar no value de cada key e deserializar aqui
+
+
+                //foreach (KeyValuePair<string, string>dicc2 in dicc1.Value)
+                //{
+                //    //ordem: idEquipa -> idPessoa -> firstname -> lastname -> data -> respeitou
+                //    MessageBox.Show($"foreach de dentro key{dicc2.Key}");
+                //    MessageBox.Show($"foreach de dentro value: {dicc2.Value}");
+                    
+
+                //}
+                
             }
-
-
-
 
             //JsonDocument docJson = JsonDocument.Parse(jsonStr);
             //MessageBox.Show($"data: {}");
