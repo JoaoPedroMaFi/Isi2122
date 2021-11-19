@@ -46,6 +46,7 @@ namespace FileImporter
             if (ext == ".json")
             {
                 MessageBox.Show("entrei no json");
+                JsonHandler.ReadJsonFile(fp);
                 
             }
             else if (ext == ".xml")
@@ -68,7 +69,7 @@ namespace FileImporter
                     isolado.Lastname = lastNames[i];
                     isolado.Respeitou = respeito[i];
 
-                    //return isolado;
+                    //Mandar para base de dados;
                 }
             }
             else

@@ -34,3 +34,4 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.pdb
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.genruntimeconfig.cache
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\FileImporter\FileImporter\obj\Debug\net5.0-windows\FileImporter.csproj.AssemblyReference.cache
+D:\IPCA\3ano\1semestre\isi\tp1Git\FileImporter\FileImporter\bin\Debug\net5.0-windows\Newtonsoft.Json.dll

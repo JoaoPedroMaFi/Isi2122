@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EgEpUuVZT1M1tuuxHSTfFy/VB0t5dq5pPTwjG1QA0bCH3mkDiWa0iPfpBERnOgp2iD2Lew0aoN7Zihv2ZyL76Q==",
+  "dgSpecHash": "IEmb9r0VTDXpL81AMCLUazy8E6cT8Zqx981P/g8eEYxKz5UMQObLvoSTx6gYQY8EwSj02sZE3Nl7tlvrO2fwpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro\\Documents\\GitHub\\Isi2122\\Dashboard\\Dashboard.csproj",
+  "projectFilePath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\Dashboard\\Dashboard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Pedro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\freak\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

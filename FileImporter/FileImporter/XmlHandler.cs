@@ -12,7 +12,7 @@ namespace FileImporter
     public static class XmlHandler
     {
         /// <summary>
-        /// Gets the number of entries from the xml document
+        /// Gets the number of entries of isolado from the xml document
         /// </summary>
         /// <param name="fp"></param>
         /// <returns></returns>
