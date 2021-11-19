@@ -45,13 +45,12 @@ namespace FileImporter
 
             if (ext == ".json")
             {
-                MessageBox.Show("entrei no json");
-                JsonHandler.ReadJsonFile(fp);
-                
+                //MessageBox.Show("entrei no json");
+                JsonHandler.ReadJsonFile(fp); 
             }
             else if (ext == ".xml")
             {
-                MessageBox.Show("entrei no xml");
+                //MessageBox.Show("entrei no xml");
                 date = XmlHandler.XmlGetDate(fp);
                 idsIsolado = XmlHandler.XmlWriteToIdIsoladoList(fp);
                 idsEquipa = XmlHandler.XmlWriteToIdEquipaList(fp);

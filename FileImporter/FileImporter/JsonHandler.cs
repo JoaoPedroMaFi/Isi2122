@@ -15,28 +15,28 @@ namespace FileImporter
     public static class JsonHandler
     {
         /// <summary>
-        /// Reads a json file
+        /// Reads a json file, transforms it into isolado objects
         /// Source: https://www.delftstack.com/howto/csharp/read-json-file-in-csharp/
         /// </summary>
         public static void ReadJsonFile(string filepath)
         {
-            //StreamReader stream = new(filepath);
-            //string jsonStr = stream.ReadToEnd();
-
            
+            // Reads the json file into a string
             string jsonString = File.ReadAllText(filepath);
 
- 
+            // Variables
             Dictionary<string, Dictionary<string, string>>  all;
-            List<string> diccValues = new();
+            List<string> diccValues = new(); 
             Isolado isolado = new();
             int count;
 
+            // Deserialize the json string
             all = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string,string>>>(jsonString, new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             });
 
+            // Getting to the values inside the json
             foreach (KeyValuePair<string, Dictionary<string,string>> dicc1 in all)
             {
 
@@ -49,8 +49,10 @@ namespace FileImporter
 
             }
 
+            // Counter for size of list containing json information
             count = diccValues.Count;
 
+            // Fills the object 1 by 1 using the list
             for (int i = 0; i < count; i = i + 6)
             {
                 isolado.Idequipa = Int32.Parse(diccValues[i]);
