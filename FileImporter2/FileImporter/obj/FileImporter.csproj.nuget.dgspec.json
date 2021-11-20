@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj": {}
+    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\FileImporter2\\FileImporter\\FileImporter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj": {
+    "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\FileImporter2\\FileImporter\\FileImporter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\FileImporter2\\FileImporter\\FileImporter.csproj",
         "projectName": "FileImporter",
-        "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\FileImporter.csproj",
+        "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\FileImporter2\\FileImporter\\FileImporter.csproj",
         "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\FileImporter\\FileImporter\\obj\\",
+        "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\FileImporter2\\FileImporter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
