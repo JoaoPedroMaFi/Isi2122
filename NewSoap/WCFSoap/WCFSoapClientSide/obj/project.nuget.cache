@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fOv/1AwwR9xL4KGJrwzY2MhoWYCJtBxTN16hhNceGYTQ7DfnNE7HhWbLbO2NkClDjO13cc5AwofokOWTRq35VA==",
+  "dgSpecHash": "8PQ2SFOOEFcjFghUyhlCK7ubaQByXEkLl5at6n4ai7OIM2tUh96ntmiEioQSLQurqO80Qn1r0hVVTYGWUhJERQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
+  "projectFilePath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE isolados SYSTEM "xml3Validation.dtd">
 <isolados data="2021-09-31">
-	<isolado id="1">
+	<isolado utentNumber="17464754">
 		<idequipa>1</idequipa>
 		<firstname>primeiro</firstname>
     <lastname>primeiroApelido</lastname>
 		<respeitou>true</respeitou>
 	</isolado>
-	<isolado id="2">
+	<isolado utentNumber="245365346">
 		<idequipa>2</idequipa>
 		<firstname>segundo</firstname>
     <lastname>segundoApelido</lastname>
 		<respeitou>false</respeitou>
 	</isolado>
-	<isolado id="3">
+	<isolado utentNumber="734364389">
 		<idequipa>3</idequipa>
 		<firstname>terceiro</firstname>
     <lastname>terceiroApelido</lastname>

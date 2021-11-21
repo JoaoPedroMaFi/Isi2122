@@ -1,27 +1,27 @@
 {
   "1": {
+    "utentNumber": "12353771",
     "idequipa": "1",
-    "idpessoa": "1",
     "firstname": "atua",
-    "laststname": "primadequatro",
+    "lastname": "primadequatro",
     "data": "09-09-2021",
     "respeitou": "true"
   },
 
   "2": {
-    "idequipa": "1",
-    "idpessoa": "2",
+    "utentNumber": "185386846",
+    "idequipa": "2",
     "firstname": "aasatua",
-    "laststname": "prisaasmadequatro",
+    "lastname": "prisaasmadequatro",
     "data": "09-09-2021",
     "respeitou": "true"
   },
 
   "3": {
-    "idequipa": "2",
-    "idpessoa": "3",
+    "utentNumber": "26346729",
+    "idequipa": "3",
     "firstname": "adfsaftua",
-    "laststname": "primaasdffddequatro",
+    "lastname": "primaasdffddequatro",
     "data": "09-09-2021",
     "respeitou": "false"
   }

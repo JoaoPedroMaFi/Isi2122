@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mydb_filesexportModelStoreContainer" CdmEntityContainer="Mydb_filesexportEntities">
+    <EntitySetMapping Name="isolado">
+      <EntityTypeMapping TypeName="mydb_filesexportModel.isolado">
+        <MappingFragment StoreEntitySet="isolado">
+          <ScalarProperty Name="idisolado" ColumnName="idisolado" />
+          <ScalarProperty Name="utentNumber" ColumnName="utentNumber" />
+          <ScalarProperty Name="idequipa" ColumnName="idequipa" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="respeito" ColumnName="respeito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
