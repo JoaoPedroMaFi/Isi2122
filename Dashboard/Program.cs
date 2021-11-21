@@ -17,7 +17,7 @@ namespace Dashboard
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Final_dash());
+            Application.Run(new Login());
         }
     }
 }
