@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace FileImporter.Models
 {
+    //https://developercommunity.visualstudio.com/t/vs-2019-rc-cant-create-winforms-net-framework-or-n/716953
+
+
     public class Isolado
     {
         /// <summary>
         /// id of the inspectioned, infected person
         /// </summary>
-        public int Idisolado { get; set; }
+        public int UtentNumber { get; set; }
 
         /// <summary>
         /// id of the team inspecting that person
@@ -38,7 +41,5 @@ namespace FileImporter.Models
         /// true for yes, false for no
         /// </summary>
         public bool Respeitou { get; set; }
-
-
     }
 }

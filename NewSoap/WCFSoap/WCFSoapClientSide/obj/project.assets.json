@@ -1023,11 +1023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
+      "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
       "projectName": "WCFSoapClientSide",
-      "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
+      "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewSoap\\WCFSoap\\WCFSoapClientSide\\WCFSoapClientSide.csproj",
       "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Desktop\\NewSoap\\WCFSoap\\WCFSoapClientSide\\obj\\",
+      "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewSoap\\WCFSoap\\WCFSoapClientSide\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

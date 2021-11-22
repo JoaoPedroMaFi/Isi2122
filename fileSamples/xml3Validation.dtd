@@ -9,4 +9,4 @@
 
   <!--attributes-->
   <!ATTLIST isolados data CDATA #REQUIRED>
-  <!ATTLIST isolado id CDATA #REQUIRED>
+  <!ATTLIST isolado utentNumber CDATA #REQUIRED>
