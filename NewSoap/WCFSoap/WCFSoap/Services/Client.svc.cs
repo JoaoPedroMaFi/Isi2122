@@ -16,14 +16,17 @@ namespace WCFSoap.Services
     {
 
         Mybd_soapEntities db = new Mybd_soapEntities();
+        /// <summary>
+        /// Retorna uma lista de todos os infetados
+        /// </summary>
+        /// <returns></returns>
         public List<Infectado> GetAllInfected()
         {
-
-
             List<Infectado> infetados = new List<Infectado>();
-
-            foreach (infetado inf in db.infetadoes)
+            List<infetado> isolados = db.infetadoes.ToList();
+            foreach (infetado inf in isolados)
             {
+                
                 Infectado infetadoClasse = new Infectado();
                 infetadoClasse.Firstname = inf.firstname;
                 infetadoClasse.Laststname = inf.lastname;
@@ -47,13 +50,9 @@ namespace WCFSoap.Services
             throw new NotImplementedException();
         }
 
+        // Indica uma equipa e um infetado
         public void IndicateInfetion(Equipa equipa, Infectado infectado)
         {
-            //InsertNewInfected(firstName, lastName, idEquipa);
-
-            //InsertTeam(equipaName);
-            //InsertInfectedPerson(firstName, lastName);
-
             equipa equipaNova = new equipa();
             equipaNova.nome = equipa.Nome;
             equipaNova.idequipa = equipa.Idequipa;
@@ -67,6 +66,40 @@ namespace WCFSoap.Services
             infected.idequipa = infectado.Idequipa;
             db.infetadoes.Add(infected);
             db.SaveChanges();
+
+        }
+
+        // indica um suspeito
+        public void IndicateSuspect(string idequipa, Suspeito suspeitoObj)
+        {
+            
+            suspeito suspeitoDb = new suspeito();
+            suspeitoDb.firstname = suspeitoObj.Firstname;
+            suspeitoDb.lastname = suspeitoObj.Laststname;
+            suspeitoDb.idinfetado = Int32.Parse(idequipa);
+            db.suspeitoes.Add(suspeitoDb);
+            db.SaveChanges();
+
+        }
+        /// <summary>
+        /// Retorna uma lista de todos os suspeitos
+        /// </summary>
+        /// <returns></returns>
+        public List<Suspeito> GetAllSuspects()
+        {
+            List<Suspeito> suspeitoList = new List<Suspeito>();
+            List<suspeito> suspeitoDB = db.suspeitoes.ToList();
+            foreach (suspeito inf in suspeitoDB)
+            {
+
+                Suspeito suspeitoClasse = new Suspeito();
+                suspeitoClasse.Firstname = inf.firstname;
+                suspeitoClasse.Laststname = inf.lastname;
+                suspeitoList.Add(suspeitoClasse);
+
+            }
+
+            return suspeitoList;
 
         }
         public void IndicateInfetionList(List<Infectado> list)
@@ -95,5 +128,6 @@ namespace WCFSoap.Services
             //InsertNewInfected(name1, lastName1, id1);
 
         }
+
     }
 }

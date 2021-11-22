@@ -44,6 +44,8 @@ namespace WCFSoapClientSide
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.ButtonAllInfecteds = new System.Windows.Forms.Button();
+            this.BtnInsertListSuspects = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -165,7 +167,7 @@ namespace WCFSoapClientSide
             // 
             // ButtonAllInfecteds
             // 
-            this.ButtonAllInfecteds.Location = new System.Drawing.Point(240, 313);
+            this.ButtonAllInfecteds.Location = new System.Drawing.Point(48, 313);
             this.ButtonAllInfecteds.Name = "ButtonAllInfecteds";
             this.ButtonAllInfecteds.Size = new System.Drawing.Size(92, 23);
             this.ButtonAllInfecteds.TabIndex = 14;
@@ -173,11 +175,33 @@ namespace WCFSoapClientSide
             this.ButtonAllInfecteds.UseVisualStyleBackColor = true;
             this.ButtonAllInfecteds.Click += new System.EventHandler(this.ButtonAllInfecteds_Click);
             // 
+            // BtnInsertListSuspects
+            // 
+            this.BtnInsertListSuspects.Location = new System.Drawing.Point(416, 313);
+            this.BtnInsertListSuspects.Name = "BtnInsertListSuspects";
+            this.BtnInsertListSuspects.Size = new System.Drawing.Size(112, 23);
+            this.BtnInsertListSuspects.TabIndex = 15;
+            this.BtnInsertListSuspects.Text = "Inserir Suspeitos";
+            this.BtnInsertListSuspects.UseVisualStyleBackColor = true;
+            this.BtnInsertListSuspects.Click += new System.EventHandler(this.BtnInsertListSuspects_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(226, 313);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 23);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Ver Suspeitos";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnInsertListSuspects);
             this.Controls.Add(this.ButtonAllInfecteds);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -217,5 +241,7 @@ namespace WCFSoapClientSide
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button ButtonAllInfecteds;
+        private System.Windows.Forms.Button BtnInsertListSuspects;
+        private System.Windows.Forms.Button button2;
     }
 }

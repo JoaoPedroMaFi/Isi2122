@@ -39,5 +39,18 @@ namespace WCFSoapClientSide
             this.Hide();
 
         }
+
+        private void BtnInsertListSuspects_Click(object sender, EventArgs e)
+        {
+            Suspetcs newformSus = new(idInfetado.Text);
+            newformSus.ShowDialog();
+            this.Hide();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

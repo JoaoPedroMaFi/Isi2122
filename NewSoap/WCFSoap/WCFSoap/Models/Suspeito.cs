@@ -6,10 +6,11 @@ using System.Web;
 
 namespace WCFSoap.Models
 {
-    [DataContract]
+
     /// <summary>
     /// Isto abstrai um suspeito de estar contaminado com covid
     /// </summary>
+    [DataContract]
     public class Suspeito
     {
 

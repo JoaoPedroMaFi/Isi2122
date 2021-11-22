@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using WCFSoap.DatabaseEntity;
 using WCFSoap.Models;
 
 namespace WCFSoap.Services
@@ -18,7 +19,14 @@ namespace WCFSoap.Services
         /// </summary>
         /// <returns>Todas as pessoas infetadas</returns>
         [OperationContract]
-        List<Infectado>GetAllInfected();
+        List<Infectado> GetAllInfected();
+
+        /// <summary>
+        /// Metodo para mostrar todas as pessoas suspeitas
+        /// </summary>
+        /// <returns>Todas as pessoas infetadas</returns>
+        [OperationContract]
+        List<Suspeito> GetAllSuspects();
 
         /// <summary>
         /// Metodo para mostrar pessoas que entararm em contaco com pessoas infetadas
@@ -62,6 +70,15 @@ namespace WCFSoap.Services
         /// <param name="idInfetado"></param>
         [OperationContract]
         void InsertNewSuspectClient(string firstName, string lastName, int id, int idInfetado);
+
+        /// <summary>
+        /// Inserir um novo suspeito na base de dados
+        /// </summary>
+        /// <param name="idequipa"></param>
+        /// <param name="suspeitoObj"></param>
+        [OperationContract]
+        void IndicateSuspect(string idequipa, Suspeito suspeitoObj);
     }
+
 
 }

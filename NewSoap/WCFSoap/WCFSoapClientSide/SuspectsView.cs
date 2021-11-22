@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WCFSoapClientSide
 {
-    public partial class Infecteds : Form
+    public partial class SuspectsView : Form
     {
-        public Infecteds()
+        public SuspectsView()
         {
             InitializeComponent();
         }
@@ -20,11 +20,11 @@ namespace WCFSoapClientSide
         private void button1_Click(object sender, EventArgs e)
         {
             WCFClient.ClientClient client = new();
-            List<WCFClient.Infectado> list = new();
-            list = client.GetAllInfectedAsync().Result;
-            foreach (WCFClient.Infectado inf in list)
+            List<WCFClient.Suspeito> list = new();
+            list = client.GetAllSuspectsAsync().Result;
+            foreach (WCFClient.Suspeito sus in list)
             {
-                RTBox.Text += inf.Firstname +"\t" + inf.Laststname;
+                RTBoxSus.Text += sus.Firstname + "\t" + sus.Laststname;
             }
         }
     }

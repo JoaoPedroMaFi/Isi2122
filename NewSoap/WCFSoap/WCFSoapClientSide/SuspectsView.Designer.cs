@@ -1,7 +1,7 @@
 ﻿
 namespace WCFSoapClientSide
 {
-    partial class Infecteds
+    partial class SuspectsView
     {
         /// <summary>
         /// Required designer variable.
@@ -30,48 +30,48 @@ namespace WCFSoapClientSide
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.RTBox = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.RTBoxSus = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(41, 25);
+            this.label1.Location = new System.Drawing.Point(37, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(361, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Lista de Todas as Pessoas Infectadas";
-            // 
-            // RTBox
-            // 
-            this.RTBox.Location = new System.Drawing.Point(41, 77);
-            this.RTBox.Name = "RTBox";
-            this.RTBox.Size = new System.Drawing.Size(673, 250);
-            this.RTBox.TabIndex = 1;
-            this.RTBox.Text = "";
+            this.label1.Size = new System.Drawing.Size(348, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Lista de Todas as Pessoas Suspeitas";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(481, 25);
+            this.button1.Location = new System.Drawing.Point(447, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Show";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Infecteds
+            // RTBoxSus
+            // 
+            this.RTBoxSus.Location = new System.Drawing.Point(37, 73);
+            this.RTBoxSus.Name = "RTBoxSus";
+            this.RTBoxSus.Size = new System.Drawing.Size(673, 250);
+            this.RTBoxSus.TabIndex = 4;
+            this.RTBoxSus.Text = "";
+            // 
+            // SuspectsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.RTBoxSus);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.RTBox);
             this.Controls.Add(this.label1);
-            this.Name = "Infecteds";
-            this.Text = "Infecteds";
+            this.Name = "SuspectsView";
+            this.Text = "SuspectsView";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +80,7 @@ namespace WCFSoapClientSide
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox RTBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox RTBoxSus;
     }
 }

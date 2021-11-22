@@ -7,5 +7,8 @@
     <Compile Update="Infecteds.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Suspetcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
