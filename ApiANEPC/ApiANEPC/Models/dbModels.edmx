@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="mydb_isiModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="cidade">
+          <Key>
+            <PropertyRef Name="idcidade" />
+          </Key>
+          <Property Name="idcidade" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cidade_nome" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'def.mydb_isi.enc_pro' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="enc_pro">
+          <Property Name="idencomenta" Type="int" />
+          <Property Name="idproduto" Type="int" />
+          <Property Name="quantidade" Type="int" />
+        </EntityType>-->
+        <EntityType Name="encomenda">
+          <Key>
+            <PropertyRef Name="idencomenda" />
+          </Key>
+          <Property Name="idencomenda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idequipa" Type="int" Nullable="false" />
+          <Property Name="entregue" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="equipa">
+          <Key>
+            <PropertyRef Name="idequipa" />
+          </Key>
+          <Property Name="idequipa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idcidade" Type="int" Nullable="false" />
+          <Property Name="equipa_nome" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="produto">
+          <Key>
+            <PropertyRef Name="idproduto" />
+          </Key>
+          <Property Name="idproduto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="descricao" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="preco" Type="float" Nullable="false" />
+        </EntityType>
+        <Association Name="idcidade">
+          <End Role="cidade" Type="Self.cidade" Multiplicity="1" />
+          <End Role="equipa" Type="Self.equipa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cidade">
+              <PropertyRef Name="idcidade" />
+            </Principal>
+            <Dependent Role="equipa">
+              <PropertyRef Name="idcidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+error 6004: The table 'def.mydb_isi.enc_pro' is referenced by a relationship, but cannot be found.
+        <Association Name="idencomenda" />-->
+        <Association Name="idequipa">
+          <End Role="equipa" Type="Self.equipa" Multiplicity="1" />
+          <End Role="encomenda" Type="Self.encomenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="equipa">
+              <PropertyRef Name="idequipa" />
+            </Principal>
+            <Dependent Role="encomenda">
+              <PropertyRef Name="idequipa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+error 6004: The table 'def.mydb_isi.enc_pro' is referenced by a relationship, but cannot be found.
+        <Association Name="idproduto" />-->
+        <EntityContainer Name="mydb_isiModelStoreContainer">
+          <EntitySet Name="cidade" EntityType="Self.cidade" Schema="mydb_isi" store:Type="Tables" />
+          <EntitySet Name="encomenda" EntityType="Self.encomenda" Schema="mydb_isi" store:Type="Tables" />
+          <EntitySet Name="equipa" EntityType="Self.equipa" Schema="mydb_isi" store:Type="Tables" />
+          <EntitySet Name="produto" EntityType="Self.produto" Schema="mydb_isi" store:Type="Tables" />
+          <AssociationSet Name="idcidade" Association="Self.idcidade">
+            <End Role="cidade" EntitySet="cidade" />
+            <End Role="equipa" EntitySet="equipa" />
+          </AssociationSet>
+          <AssociationSet Name="idequipa" Association="Self.idequipa">
+            <End Role="equipa" EntitySet="equipa" />
+            <End Role="encomenda" EntitySet="encomenda" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="mydb_isiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="cidade">
+          <Key>
+            <PropertyRef Name="idcidade" />
+          </Key>
+          <Property Name="idcidade" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cidade_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="equipas" Relationship="Self.idcidade" FromRole="cidade" ToRole="equipa" />
+        </EntityType>
+        <EntityType Name="encomenda">
+          <Key>
+            <PropertyRef Name="idencomenda" />
+          </Key>
+          <Property Name="idencomenda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idequipa" Type="Int32" Nullable="false" />
+          <Property Name="entregue" Type="SByte" Nullable="false" />
+          <NavigationProperty Name="equipa" Relationship="Self.idequipa" FromRole="encomenda" ToRole="equipa" />
+        </EntityType>
+        <EntityType Name="equipa">
+          <Key>
+            <PropertyRef Name="idequipa" />
+          </Key>
+          <Property Name="idequipa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idcidade" Type="Int32" Nullable="false" />
+          <Property Name="equipa_nome" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="cidade" Relationship="Self.idcidade" FromRole="equipa" ToRole="cidade" />
+          <NavigationProperty Name="encomendas" Relationship="Self.idequipa" FromRole="equipa" ToRole="encomenda" />
+        </EntityType>
+        <EntityType Name="produto">
+          <Key>
+            <PropertyRef Name="idproduto" />
+          </Key>
+          <Property Name="idproduto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="descricao" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="preco" Type="Single" Nullable="false" />
+        </EntityType>
+        <Association Name="idcidade">
+          <End Role="cidade" Type="Self.cidade" Multiplicity="1" />
+          <End Role="equipa" Type="Self.equipa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="cidade">
+              <PropertyRef Name="idcidade" />
+            </Principal>
+            <Dependent Role="equipa">
+              <PropertyRef Name="idcidade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="idequipa">
+          <End Role="equipa" Type="Self.equipa" Multiplicity="1" />
+          <End Role="encomenda" Type="Self.encomenda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="equipa">
+              <PropertyRef Name="idequipa" />
+            </Principal>
+            <Dependent Role="encomenda">
+              <PropertyRef Name="idequipa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="mydb_isiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cidades" EntityType="Self.cidade" />
+          <EntitySet Name="encomendas" EntityType="Self.encomenda" />
+          <EntitySet Name="equipas" EntityType="Self.equipa" />
+          <EntitySet Name="produtoes" EntityType="Self.produto" />
+          <AssociationSet Name="idcidade" Association="Self.idcidade">
+            <End Role="cidade" EntitySet="cidades" />
+            <End Role="equipa" EntitySet="equipas" />
+          </AssociationSet>
+          <AssociationSet Name="idequipa" Association="Self.idequipa">
+            <End Role="equipa" EntitySet="equipas" />
+            <End Role="encomenda" EntitySet="encomendas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="mydb_isiModelStoreContainer" CdmEntityContainer="mydb_isiEntities">
+          <EntitySetMapping Name="cidades">
+            <EntityTypeMapping TypeName="mydb_isiModel.cidade">
+              <MappingFragment StoreEntitySet="cidade">
+                <ScalarProperty Name="idcidade" ColumnName="idcidade" />
+                <ScalarProperty Name="cidade_nome" ColumnName="cidade_nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="encomendas">
+            <EntityTypeMapping TypeName="mydb_isiModel.encomenda">
+              <MappingFragment StoreEntitySet="encomenda">
+                <ScalarProperty Name="idencomenda" ColumnName="idencomenda" />
+                <ScalarProperty Name="idequipa" ColumnName="idequipa" />
+                <ScalarProperty Name="entregue" ColumnName="entregue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="equipas">
+            <EntityTypeMapping TypeName="mydb_isiModel.equipa">
+              <MappingFragment StoreEntitySet="equipa">
+                <ScalarProperty Name="idequipa" ColumnName="idequipa" />
+                <ScalarProperty Name="idcidade" ColumnName="idcidade" />
+                <ScalarProperty Name="equipa_nome" ColumnName="equipa_nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="produtoes">
+            <EntityTypeMapping TypeName="mydb_isiModel.produto">
+              <MappingFragment StoreEntitySet="produto">
+                <ScalarProperty Name="idproduto" ColumnName="idproduto" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="preco" ColumnName="preco" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
