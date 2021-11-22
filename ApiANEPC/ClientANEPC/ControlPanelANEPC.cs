@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ClientANEPC
 {
-    public partial class Form1 : Form
+    public partial class ControlPanelANEPC : Form
     {
-        public Form1()
+        public ControlPanelANEPC()
         {
             InitializeComponent();
         }

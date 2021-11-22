@@ -1,5 +1,4 @@
-﻿
-namespace ClientANEPC.Models
+﻿namespace ClientANEPC.Models
 {
     partial class ConsultasForm
     {

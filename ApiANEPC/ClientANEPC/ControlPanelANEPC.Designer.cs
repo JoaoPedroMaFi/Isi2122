@@ -1,7 +1,6 @@
-﻿
-namespace ClientANEPC
+﻿namespace ClientANEPC
 {
-    partial class Form1
+    partial class ControlPanelANEPC
     {
         /// <summary>
         ///  Required designer variable.

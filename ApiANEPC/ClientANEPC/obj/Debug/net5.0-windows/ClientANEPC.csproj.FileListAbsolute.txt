@@ -8,7 +8,6 @@ D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.csproj.AssemblyReference.cache
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.Models.ConsultasForm.resources
-D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.Form1.resources
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.csproj.GenerateResource.cache
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.GeneratedMSBuildEditorConfig.editorconfig
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.AssemblyInfoInputs.cache
@@ -19,3 +18,4 @@ D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ref\ClientANEPC.dll
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.pdb
 D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.genruntimeconfig.cache
+D:\IPCA\3ano\1semestre\isi\tp1Git\ApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.ControlPanelANEPC.resources
