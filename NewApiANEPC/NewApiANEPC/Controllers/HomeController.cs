@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NewApiANEPC.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/HomeController")]
     [ApiController]
     public class HomeController : Controller
     {
