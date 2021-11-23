@@ -19,7 +19,7 @@ namespace ClientANEPC
 
         private void buttonListarCidades_Click(object sender, EventArgs e)
         {
-
+            Program.getAllCities();
         }
     }
 }
