@@ -10,6 +10,7 @@ namespace NewApiANEPC.Controllers
     [ApiController]
     public class CidadeController : Controller
     {
+        
         public IActionResult Index()
         {
             return View();

@@ -7,11 +7,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+// https://mysqlconnector.net/tutorials/connect-to-mysql/
 namespace NewApiANEPC
 {
     public class Startup
@@ -32,6 +33,7 @@ namespace NewApiANEPC
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "NewApiANEPC", Version = "v1" });
             });
+            services.AddTransient<MySqlConnection>(_ => new MySqlConnection(Configuration["ConnectionStrings:NewApiANEPCContext"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
