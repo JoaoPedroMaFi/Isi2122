@@ -27,6 +27,19 @@ namespace ClientANEPC
         }
 
         /// <summary>
+        /// Refreshes text boxes
+        /// </summary>
+        private void RefreshInfo() 
+        {
+            listViewCidades.Items.Clear();
+            listViewCidades.Refresh();
+
+            listBox1.Items.Clear();
+            listBox1.Refresh();
+        }
+
+
+        /// <summary>
         /// what happens when we press listar cidades button
         /// </summary>
         /// <param name="sender"></param>
@@ -34,11 +47,7 @@ namespace ClientANEPC
         private void buttonListarCidades_Click(object sender, EventArgs e)
         {
             //Program.getAllCities();
-            listViewCidades.Items.Clear();
-            listViewCidades.Refresh();
-            
-            listBox1.Items.Clear();
-            listBox1.Refresh();
+            RefreshInfo();
 
             string requestURI;
             HttpResponseMessage response;
@@ -136,6 +145,8 @@ namespace ClientANEPC
                 MessageBox.Show(ex.Message);
                 MessageBox.Show(ex.StackTrace);
             }
+
+            RefreshInfo();
         }
 
         private void textBoxAddCity_TextChanged(object sender, EventArgs e)
@@ -178,6 +189,8 @@ namespace ClientANEPC
                 MessageBox.Show(ex.Message);
                 MessageBox.Show(ex.StackTrace);
             }
+
+            RefreshInfo();
         }
 
 
@@ -211,6 +224,8 @@ namespace ClientANEPC
                 MessageBox.Show(ex.Message);
                 MessageBox.Show(ex.StackTrace);
             }
+
+            RefreshInfo();
 
         }
     }
