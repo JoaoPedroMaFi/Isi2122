@@ -33,28 +33,36 @@ namespace ClientANEPC
 
         }
 
-        public static void getAllCities()
-        {
-            string requestURI;
-            HttpResponseMessage response;
+        //public static void getAllCities()
+        //{
+        //    string requestURI;
+        //    HttpResponseMessage response;
 
-            requestURI = $"https://{host}:{port.ToString().Trim()}/api/cidades/getAll";
+        //    requestURI = $"https://{host}:{port.ToString().Trim()}/api/cidades/getAll";
 
-            try
-            {
-                response = client.GetAsync(requestURI).Result;
-                if (!response.StatusCode.Equals(HttpStatusCode.OK))
-                {
-                    throw new Exception(response.Content.ReadAsStringAsync().Result);
-                }
+        //    try
+        //    {
+        //        response = client.GetAsync(requestURI).Result;
+        //        if (!response.StatusCode.Equals(HttpStatusCode.OK))
+        //        {
+        //            throw new Exception(response.Content.ReadAsStringAsync().Result);
+        //        }
+                
+        //        listBox1.Items.Clear();
+        //        foreach (var message in messages)
+        //        {
+        //            listBox1.Items.Add($"SenderId: {message.sender_id}: {message.content} (MsgId = {message.message_id})");
+        //            listBox1.Refresh();
+        //        }
 
-                MessageBox.Show(response.Content.ReadAsStringAsync().Result);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                MessageBox.Show(ex.StackTrace);
-            }
-        }
+        //        response.Content.ReadAsStringAsync();
+        //        //MessageBox.Show(response.Content.ReadAsStringAsync().Result);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //        MessageBox.Show(ex.StackTrace);
+        //    }
+        //}
     }
 }

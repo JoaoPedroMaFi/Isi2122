@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8H0Jof+9aZGIdmxB7Z4tp8o2gASwiIljhV3FsesE69f03jVvia9FXZyLTqBV4lIY9Q2mauJ4dWYOyREnPXC3Ug==",
+  "dgSpecHash": "nQOLINe9WRFZjpYgMpdaJKZp7q9kFQinNpYGFDjMSZMT6xWIbZAwDRqByvUyB1YpxuoW33sT6mIC+xoT5FeI7w==",
   "success": true,
-  "projectFilePath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\ApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
+  "projectFilePath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\ApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\freak\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Pedro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

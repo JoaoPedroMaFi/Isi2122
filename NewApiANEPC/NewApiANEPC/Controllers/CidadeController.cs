@@ -22,27 +22,29 @@ namespace NewApiANEPC.Controllers
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
+            List<Cidade> list = new();
             //open connection
             await connection.OpenAsync();
 
+            //cidade_nome ------> como estava antes no select
             string query = @"
-                            SELECT cidade_nome 
+                            SELECT *
                             FROM mydb_isi.cidade;";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 
-            List<string> list = new();
-            string val2;
+            
+
             while (await reader.ReadAsync())
             {
-                for (int i = 0; i < reader.FieldCount; i++)
-                {
-                    var value = reader.GetValue(i);
-                    val2 = value.ToString();
-                    list.Add(val2);
-                }
+                Cidade c = new();
+                c.IdCidade = reader.GetInt32(0);
+                c.CidadeNome = reader.GetString(1);
+
+                list.Add(c);
+              
             }
-            
+
 
             //Close the reader
             await reader.CloseAsync();
@@ -51,6 +53,44 @@ namespace NewApiANEPC.Controllers
 
 
             return Ok(list);
+        }
+
+        /// <summary>
+        /// Returns all cities in the database
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("getByName")]
+        public async Task<ActionResult<IEnumerable<int>>> GetCidadesByNameAsync(string cityName)
+        {
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // retorna o id da cidade, entrando o nome dela
+            string query = $@"
+                            SELECT idcidade 
+                            FROM mydb_isi.cidade
+                            Where cidade_nome like '{cityName}'";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            var value=0;
+            while (await reader.ReadAsync())
+            {
+                
+                   // value = reader.GetValue(0);
+            }
+
+
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+
+            return Ok(value);
         }
     }
 }
