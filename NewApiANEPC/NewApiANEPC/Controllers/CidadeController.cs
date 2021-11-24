@@ -130,6 +130,42 @@ namespace NewApiANEPC.Controllers
             return Ok(value);
         }
 
+        //------------------------------------------------------------------------------------
+
+        [HttpPut]
+        [Route("editCity")]
+        public async Task<ActionResult<IEnumerable<int>>> EditCity([FromBody]Cidade city)
+        {
+            //TODO: verificar se a cidade já existe
+
+
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // nova entrada na tabela cidades, adiciona uma cidade
+            string query = $@"
+                            UPDATE `mydb_isi`.`cidade` SET `cidade_nome` = '{city.CidadeNome}' WHERE (`idcidade` = '{city.IdCidade}'); ";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            var value = 0;
+            //while (await reader.ReadAsync())
+            //{
+                
+            //}
+
+
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+
+            return Ok(value);
+        }
+
 
     }
 }

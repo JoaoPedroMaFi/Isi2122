@@ -36,6 +36,11 @@ namespace ClientANEPC
             this.Nome = new System.Windows.Forms.ColumnHeader();
             this.buttonAddCity = new System.Windows.Forms.Button();
             this.textBoxAddCity = new System.Windows.Forms.TextBox();
+            this.buttonEditarCidade = new System.Windows.Forms.Button();
+            this.textBoxEditarCidadeId = new System.Windows.Forms.TextBox();
+            this.textBoxEditarCidadeNome = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBox1
@@ -99,11 +104,58 @@ namespace ClientANEPC
             this.textBoxAddCity.TabIndex = 4;
             this.textBoxAddCity.TextChanged += new System.EventHandler(this.textBoxAddCity_TextChanged);
             // 
+            // buttonEditarCidade
+            // 
+            this.buttonEditarCidade.Location = new System.Drawing.Point(550, 12);
+            this.buttonEditarCidade.Name = "buttonEditarCidade";
+            this.buttonEditarCidade.Size = new System.Drawing.Size(110, 25);
+            this.buttonEditarCidade.TabIndex = 5;
+            this.buttonEditarCidade.Text = "Editar Cidade";
+            this.buttonEditarCidade.UseVisualStyleBackColor = true;
+            this.buttonEditarCidade.Click += new System.EventHandler(this.buttonEditarCidade_Click);
+            // 
+            // textBoxEditarCidadeId
+            // 
+            this.textBoxEditarCidadeId.Location = new System.Drawing.Point(550, 52);
+            this.textBoxEditarCidadeId.Name = "textBoxEditarCidadeId";
+            this.textBoxEditarCidadeId.Size = new System.Drawing.Size(109, 23);
+            this.textBoxEditarCidadeId.TabIndex = 6;
+            // 
+            // textBoxEditarCidadeNome
+            // 
+            this.textBoxEditarCidadeNome.Location = new System.Drawing.Point(550, 90);
+            this.textBoxEditarCidadeNome.Name = "textBoxEditarCidadeNome";
+            this.textBoxEditarCidadeNome.Size = new System.Drawing.Size(108, 23);
+            this.textBoxEditarCidadeNome.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(526, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(504, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Nome";
+            // 
             // CidadesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 285);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxEditarCidadeNome);
+            this.Controls.Add(this.textBoxEditarCidadeId);
+            this.Controls.Add(this.buttonEditarCidade);
             this.Controls.Add(this.textBoxAddCity);
             this.Controls.Add(this.buttonAddCity);
             this.Controls.Add(this.listViewCidades);
@@ -125,5 +177,10 @@ namespace ClientANEPC
         private System.Windows.Forms.ColumnHeader Nome;
         private System.Windows.Forms.Button buttonAddCity;
         private System.Windows.Forms.TextBox textBoxAddCity;
+        private System.Windows.Forms.Button buttonEditarCidade;
+        private System.Windows.Forms.TextBox textBoxEditarCidadeId;
+        private System.Windows.Forms.TextBox textBoxEditarCidadeNome;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -138,6 +138,37 @@ namespace ClientANEPC
 
         }
 
+        //----------------------------------------------------------------------------------
 
+
+        private void buttonEditarCidade_Click(object sender, EventArgs e)
+        {
+            string requestURI;
+            HttpResponseMessage response;
+            Cidade cidade = new();
+
+            cidade.IdCidade = Int32.Parse(textBoxEditarCidadeId.Text);
+            cidade.CidadeNome = textBoxEditarCidadeNome.Text;
+
+           
+
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/cidades/editCity";
+
+            try
+            {
+                response = client.PutAsJsonAsync(requestURI, cidade).Result;
+
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+        }
     }
 }
