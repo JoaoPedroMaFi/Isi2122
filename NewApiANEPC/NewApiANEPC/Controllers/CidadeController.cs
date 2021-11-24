@@ -151,11 +151,7 @@ namespace NewApiANEPC.Controllers
             using var reader = await command.ExecuteReaderAsync();
 
             var value = 0;
-            //while (await reader.ReadAsync())
-            //{
-                
-            //}
-
+       
 
             //Close the reader
             await reader.CloseAsync();
@@ -166,6 +162,36 @@ namespace NewApiANEPC.Controllers
             return Ok(value);
         }
 
+        //---------------------------------------------------------------------------------------
+
+        [HttpDelete]
+        [Route("deleteCity")]
+        public async Task<ActionResult<IEnumerable<int>>> DeleteCity([FromHeader] int cityId)
+        {
+            //TODO: verificar se a cidade já existe
+
+
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // nova entrada na tabela cidades, adiciona uma cidade
+            string query = $@"
+                            DELETE FROM `mydb_isi`.`cidade` WHERE(`idcidade` = '{cityId}'); ";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            var value = 0;
+           
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+
+            return Ok(value);
+        }
 
     }
 }

@@ -41,6 +41,9 @@ namespace ClientANEPC
             this.textBoxEditarCidadeNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxApagarCidade = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -146,11 +149,40 @@ namespace ClientANEPC
             this.label2.TabIndex = 9;
             this.label2.Text = "Novo nome";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(431, 203);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 29);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Apagar Cidade";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(407, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "ID";
+            // 
+            // textBoxApagarCidade
+            // 
+            this.textBoxApagarCidade.Location = new System.Drawing.Point(431, 245);
+            this.textBoxApagarCidade.Name = "textBoxApagarCidade";
+            this.textBoxApagarCidade.Size = new System.Drawing.Size(112, 23);
+            this.textBoxApagarCidade.TabIndex = 12;
+            // 
             // CidadesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 285);
+            this.Controls.Add(this.textBoxApagarCidade);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxEditarCidadeNome);
@@ -182,5 +214,8 @@ namespace ClientANEPC
         private System.Windows.Forms.TextBox textBoxEditarCidadeNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxApagarCidade;
     }
 }

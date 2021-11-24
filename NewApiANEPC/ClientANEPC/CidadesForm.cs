@@ -34,7 +34,12 @@ namespace ClientANEPC
         private void buttonListarCidades_Click(object sender, EventArgs e)
         {
             //Program.getAllCities();
+            listViewCidades.Items.Clear();
             listViewCidades.Refresh();
+            
+            listBox1.Items.Clear();
+            listBox1.Refresh();
+
             string requestURI;
             HttpResponseMessage response;
             List<Cidade>citys = new();
@@ -175,8 +180,38 @@ namespace ClientANEPC
             }
         }
 
+
         //-------------------------------------------------------------------------------------
 
+        //button apagar cidade
+        private void button1_Click(object sender, EventArgs e)
+        {
 
+            string requestURI;
+            HttpResponseMessage response;
+            int cidadeId;
+
+            cidadeId = Int32.Parse(textBoxApagarCidade.Text);
+            
+
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/cidades/deleteCity/{cidadeId}";
+
+            try
+            {
+                response = client.DeleteAsync(requestURI).Result;
+
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+
+        }
     }
 }
