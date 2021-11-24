@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NewApiANEPC.Models;
-using MySql.Data.MySqlClient;
+using MySqlConnector;
+//using MySql.Data.MySqlClient;
+
 // https://mysqlconnector.net/tutorials/connect-to-mysql/
 namespace NewApiANEPC.Controllers
 {
@@ -56,7 +58,7 @@ namespace NewApiANEPC.Controllers
         }
 
         /// <summary>
-        /// Returns all cities in the database
+        /// Returns the id of a city in the database, after searching for its id
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -92,5 +94,42 @@ namespace NewApiANEPC.Controllers
 
             return Ok(value);
         }
+
+        [HttpPost]
+        [Route("addCity")]
+        public async Task<ActionResult<IEnumerable<int>>> AddCity([FromBody]string cityName)
+        {
+            //TODO: verificar se a cidade já existe
+
+
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // nova entrada na tabela cidades, adiciona uma cidade
+            string query = $@"
+                            INSERT INTO `mydb_isi`.`cidade` (`cidade_nome`) VALUES ('{cityName}'); ";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            var value = 0;
+            while (await reader.ReadAsync())
+            {
+
+                // value = reader.GetValue(0);
+            }
+
+
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+
+            return Ok(value);
+        }
+
+
     }
 }

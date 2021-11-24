@@ -34,8 +34,8 @@ namespace ClientANEPC
             this.listViewCidades = new System.Windows.Forms.ListView();
             this.Id = new System.Windows.Forms.ColumnHeader();
             this.Nome = new System.Windows.Forms.ColumnHeader();
-            this.labelCidadeNome = new System.Windows.Forms.TextBox();
-            this.labelCidadeId = new System.Windows.Forms.TextBox();
+            this.buttonAddCity = new System.Windows.Forms.Button();
+            this.textBoxAddCity = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -64,7 +64,7 @@ namespace ClientANEPC
             this.Nome});
             this.listViewCidades.FullRowSelect = true;
             this.listViewCidades.HideSelection = false;
-            this.listViewCidades.Location = new System.Drawing.Point(236, 38);
+            this.listViewCidades.Location = new System.Drawing.Point(143, 73);
             this.listViewCidades.Name = "listViewCidades";
             this.listViewCidades.Size = new System.Drawing.Size(145, 183);
             this.listViewCidades.TabIndex = 2;
@@ -81,27 +81,31 @@ namespace ClientANEPC
             this.Nome.Text = "Nome";
             this.Nome.Width = 100;
             // 
-            // labelCidadeNome
+            // buttonAddCity
             // 
-            this.labelCidadeNome.Location = new System.Drawing.Point(468, 56);
-            this.labelCidadeNome.Name = "labelCidadeNome";
-            this.labelCidadeNome.Size = new System.Drawing.Size(100, 23);
-            this.labelCidadeNome.TabIndex = 3;
+            this.buttonAddCity.Location = new System.Drawing.Point(304, 12);
+            this.buttonAddCity.Name = "buttonAddCity";
+            this.buttonAddCity.Size = new System.Drawing.Size(115, 27);
+            this.buttonAddCity.TabIndex = 3;
+            this.buttonAddCity.Text = "Adicionar Cidade";
+            this.buttonAddCity.UseVisualStyleBackColor = true;
+            this.buttonAddCity.Click += new System.EventHandler(this.buttonAddCity_Click);
             // 
-            // labelCidadeId
+            // textBoxAddCity
             // 
-            this.labelCidadeId.Location = new System.Drawing.Point(468, 122);
-            this.labelCidadeId.Name = "labelCidadeId";
-            this.labelCidadeId.Size = new System.Drawing.Size(100, 23);
-            this.labelCidadeId.TabIndex = 4;
+            this.textBoxAddCity.Location = new System.Drawing.Point(304, 58);
+            this.textBoxAddCity.Name = "textBoxAddCity";
+            this.textBoxAddCity.Size = new System.Drawing.Size(114, 23);
+            this.textBoxAddCity.TabIndex = 4;
+            this.textBoxAddCity.TextChanged += new System.EventHandler(this.textBoxAddCity_TextChanged);
             // 
             // CidadesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 285);
-            this.Controls.Add(this.labelCidadeId);
-            this.Controls.Add(this.labelCidadeNome);
+            this.Controls.Add(this.textBoxAddCity);
+            this.Controls.Add(this.buttonAddCity);
             this.Controls.Add(this.listViewCidades);
             this.Controls.Add(this.buttonListarCidades);
             this.Controls.Add(this.listBox1);
@@ -119,7 +123,7 @@ namespace ClientANEPC
         private System.Windows.Forms.ListView listViewCidades;
         private System.Windows.Forms.ColumnHeader Id;
         private System.Windows.Forms.ColumnHeader Nome;
-        private System.Windows.Forms.TextBox labelCidadeNome;
-        private System.Windows.Forms.TextBox labelCidadeId;
+        private System.Windows.Forms.Button buttonAddCity;
+        private System.Windows.Forms.TextBox textBoxAddCity;
     }
 }

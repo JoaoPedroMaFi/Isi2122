@@ -304,3 +304,4 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\NewApiANEPC\obj\Debug\net5.0\NewApiANEPC.RazorTargetAssemblyInfo.cache
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\NewApiANEPC\obj\Debug\net5.0\NewApiANEPC.csproj.CopyComplete
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\NewApiANEPC\obj\Debug\net5.0\NewApiANEPC.genruntimeconfig.cache
+D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\NewApiANEPC\bin\Debug\net5.0\MySqlConnector.dll

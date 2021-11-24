@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
+using System.Net.Http.Json;
 
 namespace ClientANEPC
 {
@@ -25,10 +26,15 @@ namespace ClientANEPC
             InitializeComponent();
         }
 
+        /// <summary>
+        /// what happens when we press listar cidades button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonListarCidades_Click(object sender, EventArgs e)
         {
             //Program.getAllCities();
-
+            listViewCidades.Refresh();
             string requestURI;
             HttpResponseMessage response;
             List<Cidade>citys = new();
@@ -81,8 +87,8 @@ namespace ClientANEPC
                 {
                     dados[i] = listViewCidades.SelectedItems[0].SubItems[i].Text;
                 }
-                labelCidadeId.Text = dados[0];
-                labelCidadeNome.Text = dados[1];
+                //labelCidadeId.Text = dados[0];
+                //labelCidadeNome.Text = dados[1];
                 
                 //return lv.SelectedItems[0].SubItems[0].Text;
 
@@ -98,5 +104,40 @@ namespace ClientANEPC
         {
             PreencheCampoTabEdit();
         }
+
+        //----------------------------------------------------------------------------
+
+        private void buttonAddCity_Click(object sender, EventArgs e)
+        {
+            string requestURI, cityName;
+            
+            HttpResponseMessage response;
+            
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/cidades/addCity";
+
+            cityName = textBoxAddCity.Text;
+            try
+            {
+                response = client.PostAsJsonAsync(requestURI, cityName).Result;
+
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+        }
+
+        private void textBoxAddCity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
