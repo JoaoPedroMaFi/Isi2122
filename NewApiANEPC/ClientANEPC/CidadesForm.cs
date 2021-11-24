@@ -140,7 +140,11 @@ namespace ClientANEPC
 
         //----------------------------------------------------------------------------------
 
-
+        /// <summary>
+        /// dado o ID de uma cidade, edita o nome desta
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonEditarCidade_Click(object sender, EventArgs e)
         {
             string requestURI;
