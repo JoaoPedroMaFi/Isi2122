@@ -166,6 +166,7 @@ namespace NewApiANEPC.Controllers
 
         [HttpDelete]
         [Route("deleteCity/{cityId}")]
+        // [FromRoute] onde vai buscar o parametro
         public async Task<ActionResult<IEnumerable<int>>> DeleteCity([FromRoute] int cityId)
         {
             //TODO: verificar se a cidade já existe
