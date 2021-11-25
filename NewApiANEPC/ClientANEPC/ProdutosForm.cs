@@ -83,6 +83,42 @@ namespace ClientANEPC
             }
         }
 
-        //-------------------------------------------------------------------------------
+        //----------------------------------------------------------------------------------
+        private void buttonCriarProduto_Click(object sender, EventArgs e)
+        {
+            string requestURI;
+            Produto produto = new();
+
+            HttpResponseMessage response;
+
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/produtos/addProduct";
+
+            produto.Descricao = textBoxDescProduto.Text;
+            produto.Preco = float.Parse(textBoxPrecoProduto.Text);
+
+            try
+            {
+                response = client.PostAsJsonAsync(requestURI, produto).Result;
+
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+
+            textBoxDescProduto.Clear();
+            textBoxPrecoProduto.Clear();
+
+
+            RefreshInfo();
+        }
+
+        
     }
 }

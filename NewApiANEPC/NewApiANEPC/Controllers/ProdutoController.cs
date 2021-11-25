@@ -91,7 +91,7 @@ namespace NewApiANEPC.Controllers
 
         [HttpPost]
         [Route("addProduct")]
-        public async Task<ActionResult<IEnumerable<int>>> AddProduct([FromBody] string productDescription, float price)
+        public async Task<ActionResult<IEnumerable<int>>> AddProduct([FromBody]Produto produto)
         {
             //TODO: verificar se o produto já existe
 
@@ -103,12 +103,13 @@ namespace NewApiANEPC.Controllers
             //num = num.Replace(',', '.');   // na base de dados só aceita com ponto em vez de virgula
             //float preco = float.Parse(num);
             //float num = float.Parse(price);
+
             //open connection
             await connection.OpenAsync();
 
             // nova entrada na tabela produto, adiciona um produto
             string query = $@"
-                            INSERT INTO `mydb_isi`.`produto` (`descricao`, `preco`) VALUES ('{productDescription}', '{price}'); ";
+                            INSERT INTO `mydb_isi`.`produto` (`descricao`, `preco`) VALUES ('{produto.Descricao}', '{produto.Preco}'); ";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 

@@ -35,7 +35,7 @@ namespace ClientANEPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 303);
+            this.ClientSize = new System.Drawing.Size(712, 268);
             this.Name = "EncomendasForm";
             this.Text = "EncomendasForm";
             this.ResumeLayout(false);
