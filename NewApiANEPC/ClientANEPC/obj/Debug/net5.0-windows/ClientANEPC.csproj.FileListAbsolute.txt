@@ -40,3 +40,7 @@ D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windo
 D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
 D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\Newtonsoft.Json.Bson.dll
 D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.csproj.CopyComplete
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\System.Net.Http.Formatting.dll
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\bin\Debug\net5.0-windows\Newtonsoft.Json.Bson.dll
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.csproj.CopyComplete

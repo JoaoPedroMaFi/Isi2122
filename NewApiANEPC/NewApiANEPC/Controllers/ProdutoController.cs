@@ -18,7 +18,7 @@ namespace NewApiANEPC.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("getAll")]
-        public async Task<ActionResult<IEnumerable<Produto>>> GetAllTeamsAsync()
+        public async Task<ActionResult<IEnumerable<Produto>>> GetAllProductsAsync()
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
@@ -62,7 +62,7 @@ namespace NewApiANEPC.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("getByName")]
-        public async Task<ActionResult<IEnumerable<int>>> GetTeamByNameAsync(string productDescription)
+        public async Task<ActionResult<IEnumerable<int>>> GetProductByNameAsync(string productDescription)
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
@@ -90,8 +90,8 @@ namespace NewApiANEPC.Controllers
         }
 
         [HttpPost]
-        [Route("addTeam")]
-        public async Task<ActionResult<IEnumerable<int>>> AddTeam([FromBody] string productDescription, float price)
+        [Route("addProduct")]
+        public async Task<ActionResult<IEnumerable<int>>> AddProduct([FromBody] string productDescription, float price)
         {
             //TODO: verificar se o produto já existe
 
@@ -99,15 +99,16 @@ namespace NewApiANEPC.Controllers
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
 
-            string num = price.ToString();
-            num = num.Replace(',', '.');   // na base de dados só aceita com ponto em vez de virgula
-            float preco = float.Parse(num);
+            //string num = price.ToString();
+            //num = num.Replace(',', '.');   // na base de dados só aceita com ponto em vez de virgula
+            //float preco = float.Parse(num);
+            //float num = float.Parse(price);
             //open connection
             await connection.OpenAsync();
 
             // nova entrada na tabela produto, adiciona um produto
             string query = $@"
-                            INSERT INTO `mydb_isi`.`produto` (`descricao`, `preco`) VALUES ('{productDescription}', '{preco}'); ";
+                            INSERT INTO `mydb_isi`.`produto` (`descricao`, `preco`) VALUES ('{productDescription}', '{price}'); ";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 
@@ -126,8 +127,8 @@ namespace NewApiANEPC.Controllers
         //------------------------------------------------------------------------------------
 
         [HttpPut]
-        [Route("editTeam")]
-        public async Task<ActionResult<IEnumerable<int>>> EditTeam([FromBody] Produto product)
+        [Route("editProduct")]
+        public async Task<ActionResult<IEnumerable<int>>> EditProduct([FromBody] Produto product)
         {
             //TODO: verificar se o produto já existe
 
@@ -158,11 +159,11 @@ namespace NewApiANEPC.Controllers
         //---------------------------------------------------------------------------------------
 
         [HttpDelete]
-        [Route("deleteTeam/{productId}")]
+        [Route("deleteProduct/{productId}")]
         // [FromRoute] onde vai buscar o parametro
-        public async Task<ActionResult<IEnumerable<int>>> DeleteTeam([FromRoute] int productId)
+        public async Task<ActionResult<IEnumerable<int>>> DeleteProduct([FromRoute] int productId)
         {
-            //TODO: verificar se a cidade já existe
+            //TODO: verificar se o produto já existe
 
 
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
