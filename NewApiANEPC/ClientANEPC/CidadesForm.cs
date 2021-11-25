@@ -228,5 +228,10 @@ namespace ClientANEPC
             RefreshInfo();
 
         }
+
+        private void listViewCidades_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

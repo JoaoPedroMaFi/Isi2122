@@ -78,6 +78,7 @@ namespace ClientANEPC
             this.listViewCidades.TabIndex = 2;
             this.listViewCidades.UseCompatibleStateImageBehavior = false;
             this.listViewCidades.View = System.Windows.Forms.View.Details;
+            this.listViewCidades.SelectedIndexChanged += new System.EventHandler(this.listViewCidades_SelectedIndexChanged);
             this.listViewCidades.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listViewCidades_MouseClick);
             // 
             // Id

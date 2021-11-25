@@ -33,5 +33,32 @@ namespace ClientANEPC
         {
             
         }
+
+        //----------------------------------------------------------------------------------
+        private void buttonEncomendas_Click(object sender, EventArgs e)
+        {
+            EncomendasForm ef = new();
+            ef.Show();
+            this.Hide();
+        }
+
+
+        //----------------------------------------------------------------------------------
+        private void buttonEquipas_Click(object sender, EventArgs e)
+        {
+            EquipasForm eqf = new();
+            eqf.Show();
+            this.Hide();
+        }
+
+        
+
+        //-----------------------------------------------------------------------------------
+        private void buttonProdutos_Click(object sender, EventArgs e)
+        {
+            ProdutosForm pf = new();
+            pf.Show();
+            this.Hide();
+        }
     }
 }
