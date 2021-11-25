@@ -29,13 +29,25 @@ namespace ClientANEPC
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonNovaEncomenda = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // buttonNovaEncomenda
+            // 
+            this.buttonNovaEncomenda.Location = new System.Drawing.Point(25, 65);
+            this.buttonNovaEncomenda.Name = "buttonNovaEncomenda";
+            this.buttonNovaEncomenda.Size = new System.Drawing.Size(110, 81);
+            this.buttonNovaEncomenda.TabIndex = 0;
+            this.buttonNovaEncomenda.Text = "Nova Encomenda";
+            this.buttonNovaEncomenda.UseVisualStyleBackColor = true;
+            this.buttonNovaEncomenda.Click += new System.EventHandler(this.buttonNovaEncomenda_Click);
             // 
             // EncomendasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(712, 268);
+            this.Controls.Add(this.buttonNovaEncomenda);
             this.Name = "EncomendasForm";
             this.Text = "EncomendasForm";
             this.ResumeLayout(false);
@@ -43,5 +55,7 @@ namespace ClientANEPC
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonNovaEncomenda;
     }
 }

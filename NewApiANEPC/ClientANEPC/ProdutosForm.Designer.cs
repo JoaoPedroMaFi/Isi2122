@@ -118,7 +118,7 @@ namespace ClientANEPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 275);
+            this.ClientSize = new System.Drawing.Size(715, 275);
             this.Controls.Add(this.textBoxPrecoProduto);
             this.Controls.Add(this.textBoxDescProduto);
             this.Controls.Add(this.label2);
