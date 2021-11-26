@@ -38,5 +38,52 @@ namespace NewApiANEPC.Controllers
 
             return Ok(value);
         }
+
+        //------------------------------------------------------------------------------------
+
+        [HttpPost]
+        [Route("getEncomendaDetailsById/{idEnc}")]
+        public async Task<ActionResult<IEnumerable<int>>> GetEncomendaDetails([FromRoute]string idEnc)
+        {
+            //TODO: verificar se a encomends já existe
+            int intIdEnc;
+            intIdEnc = Int32.Parse(idEnc);
+
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // busca detalhes das encomendas por id destas
+            string query = $@"
+                            SELECT * FROM mydb_isi.encpro
+                            WHERE idencomend = '{intIdEnc}'; ";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            List<EncPro> list = new();
+            var value = 0;
+            while (await reader.ReadAsync())
+            {
+                EncPro encPro = new();
+                encPro.IdEncPro = reader.GetInt32(0);
+                encPro.IdProduto = reader.GetInt32(1);
+                encPro.IdEncomenda = reader.GetInt32(2);
+                encPro.QuantidadeProduto = reader.GetInt32(3);
+
+                list.Add(encPro);
+
+            }
+
+
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+
+            return Ok(list);
+        }
+
     }
 }

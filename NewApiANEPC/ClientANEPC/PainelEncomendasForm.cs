@@ -37,7 +37,6 @@ namespace ClientANEPC
             string requestURI;
             HttpResponseMessage response;
             List<Encomenda> encomendas;
-            //ListView listview = new();
             requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/getAll";
 
             try
@@ -49,7 +48,6 @@ namespace ClientANEPC
                 }
 
 
-
                 //get data as Json string 
                 string data = response.Content.ReadAsStringAsync().Result;
                 encomendas = JsonSerializer.Deserialize<List<Encomenda>>(data, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
@@ -59,20 +57,58 @@ namespace ClientANEPC
                     string[] row = { enc.IdEncomenda.ToString(), enc.IdEquipa.ToString(), enc.Entregue.ToString() };
                     ListViewItem item = new ListViewItem(row);
 
-
-                    //listBox1.Items.Add(c.CidadeNome);
-                    //listBox1.Refresh();
                     listView1.Items.Add(item);
                 }
-                //listViewCidades = listview;
-                //response.Content.ReadAsStringAsync();
-                ////MessageBox.Show(response.Content.ReadAsStringAsync().Result);
+             
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 MessageBox.Show(ex.StackTrace);
             }
+        }
+
+        //-----------------------------------------------------------------------
+        private void buttonDetalhesEncomenda_Click(object sender, EventArgs e)
+        {
+            string requestURI;
+
+            HttpResponseMessage response;
+            List<EncPro> encPros;
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/getEncomendaDetailsById/{textBoxIdEnc.Text.ToString().Trim()}";
+
+            try
+            {
+                response = client.GetAsync(requestURI).Result;
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+
+                //get data as Json string 
+                string data = response.Content.ReadAsStringAsync().Result;
+                encPros = JsonSerializer.Deserialize<List<EncPro>>(data, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
+                listView2.Items.Clear();
+                foreach (EncPro encPro in encPros)
+                {
+                    string[] row = { encPro.IdProduto.ToString(), encPro.QuantidadeProduto.ToString() };
+                    ListViewItem item = new ListViewItem(row);
+
+
+                    listView2.Items.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
