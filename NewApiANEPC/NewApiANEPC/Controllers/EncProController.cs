@@ -14,7 +14,7 @@ namespace NewApiANEPC.Controllers
     {
         [HttpPost]
         [Route("addEncPro")]
-        public async Task<ActionResult<IEnumerable<int>>> AddCity([FromBody] EncPro encpro)
+        public async Task<ActionResult<IEnumerable<int>>> AddEncPro([FromBody] EncPro encpro)
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
