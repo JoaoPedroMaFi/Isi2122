@@ -28,6 +28,7 @@ namespace ClientANEPC
 
         public void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
         {
+
             AdicionarARequisicao();
             NovaEncomendaForm nef = new();
             this.Hide();

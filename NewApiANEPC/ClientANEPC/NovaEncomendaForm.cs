@@ -34,9 +34,6 @@ namespace ClientANEPC
         //-------------------------------------------------------------------
         private void buttonEscolherProds_Click(object sender, EventArgs e)
         {
-            // criar encomenda
-            CreateEncomenda();
-
             // lista de ids dos produtos e quantidades
             //List<EncPro> encPros = new();
 
@@ -49,7 +46,8 @@ namespace ClientANEPC
 
         private void buttonRequisitar_Click(object sender, EventArgs e)
         {
-            
+            // criar encomenda
+            CreateEncomenda();
 
         }
 
