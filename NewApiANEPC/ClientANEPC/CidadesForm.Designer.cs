@@ -196,6 +196,7 @@ namespace ClientANEPC
             this.Controls.Add(this.listBox1);
             this.Name = "CidadesForm";
             this.Text = "CidadesForm";
+            this.Load += new System.EventHandler(this.CidadesForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

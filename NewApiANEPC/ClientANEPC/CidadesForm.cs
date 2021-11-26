@@ -233,5 +233,10 @@ namespace ClientANEPC
         {
 
         }
+
+        private void CidadesForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

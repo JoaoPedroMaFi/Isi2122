@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace ClientANEPC
 {
@@ -33,36 +34,12 @@ namespace ClientANEPC
         //-------------------------------------------------------------------
         private void buttonEscolherProds_Click(object sender, EventArgs e)
         {
+            
             // criar encomenda
             Encomenda encomenda = new();
 
             encomenda.IdEquipa = Int32.Parse(textBoxIdEquipaReq.Text);
             encomenda.Entregue = false;
-
-            string requestURI;
-
-            HttpResponseMessage response;
-
-            requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/getId";
-
-         
-            try
-            {
-                response = client.GetAsync(requestURI).Result;
-
-                if (!response.StatusCode.Equals(HttpStatusCode.OK))
-                {
-                    throw new Exception(response.Content.ReadAsStringAsync().Result);
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                MessageBox.Show(ex.StackTrace);
-            }
-            response.Content.ReadAsStringAsync().Result;
 
 
             // lista de ids dos produtos e quantidades
@@ -76,7 +53,7 @@ namespace ClientANEPC
 
         private void buttonRequisitar_Click(object sender, EventArgs e)
         {
-
+            //AdicionarARequisicao();
         }
     }
 }

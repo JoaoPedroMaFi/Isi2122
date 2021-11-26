@@ -90,6 +90,7 @@ namespace ClientANEPC
             this.Controls.Add(this.label1);
             this.Name = "AdicionarProdutoAEncomendaForm";
             this.Text = "AdicionarProdutoAEncomendaForm";
+            this.Load += new System.EventHandler(this.AdicionarProdutoAEncomendaForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

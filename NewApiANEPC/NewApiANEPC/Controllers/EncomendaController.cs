@@ -19,7 +19,7 @@ namespace NewApiANEPC.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("getAll")]
-        public async Task<ActionResult<IEnumerable<Cidade>>> GetAllCidadesAsync()
+        public async Task<ActionResult<IEnumerable<Cidade>>> GetAllEncomendasAsync()
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
@@ -57,19 +57,19 @@ namespace NewApiANEPC.Controllers
         }
 
         /// <summary>
-        /// Returns the id of a city in the database, after searching for its id
+        /// Returns the id of the last encomenda
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("getId")]
-        public async Task<ActionResult<IEnumerable<int>>> GetCidadesByNameAsync(string cityName)
+        [Route("getLastId")]
+        public async Task<ActionResult<IEnumerable<int>>> GetLastEncomendaIdAsync()
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
             //open connection
             await connection.OpenAsync();
 
-            // retorna o id da cidade, entrando o nome dela
+            // retorna o id da ultima encomenda feita
             string query = $@"
                             SELECT idencomenda FROM mydb_isi.encomenda ORDER BY idencomenda DESC LIMIT 1";
             using var command = new MySqlCommand(query, connection);
@@ -80,6 +80,7 @@ namespace NewApiANEPC.Controllers
             while (await reader.ReadAsync())
             {
                 //value = reader.GetValue(0);
+                //Value(int) of the last encomenda id
                 value = reader.GetInt32(0);
 
             }

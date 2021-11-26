@@ -7996,19 +7996,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\freak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\NewApiANEPC\\NewApiANEPC.csproj",
+      "projectUniqueName": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\NewApiANEPC\\NewApiANEPC\\NewApiANEPC.csproj",
       "projectName": "NewApiANEPC",
-      "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\NewApiANEPC\\NewApiANEPC.csproj",
-      "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\NewApiANEPC\\obj\\",
+      "projectPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\NewApiANEPC\\NewApiANEPC\\NewApiANEPC.csproj",
+      "packagesPath": "C:\\Users\\freak\\.nuget\\packages\\",
+      "outputPath": "D:\\IPCA\\3ano\\1semestre\\isi\\tp1Git\\NewApiANEPC\\NewApiANEPC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\freak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
