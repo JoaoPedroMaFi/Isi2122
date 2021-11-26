@@ -41,7 +41,7 @@ namespace NewApiANEPC.Controllers
 
         //------------------------------------------------------------------------------------
 
-        [HttpPost]
+        [HttpGet]
         [Route("getEncomendaDetailsById/{idEnc}")]
         public async Task<ActionResult<IEnumerable<int>>> GetEncomendaDetails([FromRoute] string idEnc)
         {
