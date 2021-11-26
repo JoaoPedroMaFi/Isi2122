@@ -22,10 +22,10 @@ namespace ClientANEPC
         private static HttpClient client = new();
 
         //https://stackoverflow.com/questions/32361031/using-list-between-forms
-        public static List<EncPro> encPros;
+        public static List<EncPro> encPros = new();
         public NovaEncomendaForm(int idE)
         {
-            encPros = new List<EncPro>();
+            //encPros = new List<EncPro>();
             InitializeComponent();
             labelIdEq.Text = idE.ToString();
         }
@@ -55,6 +55,8 @@ namespace ClientANEPC
 
             // criar encomenda
             CreateEncomenda(idE);
+            // criar entrada na tabela encPro, so sucede se o cria encomenda for executado antes
+            // pois para inserir nesta tabela precisamos do id da encomenda que é chave estrangeira aqui
             EnviarEncPro(encPros);
 
             Form1 f1 = new();
@@ -89,6 +91,7 @@ namespace ClientANEPC
             }
         }
 
+        //problema: nao chega nada a esta lista
         public void EnviarEncPro(List<EncPro> list)
         {
 

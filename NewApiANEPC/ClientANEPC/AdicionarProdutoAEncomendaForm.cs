@@ -31,13 +31,13 @@ namespace ClientANEPC
         {
             int idE;
             idE = Int32.Parse(labelIdEq.Text);
-            AdicionarARequisicao();
+            AdicionarProdutoEncomenda();
             NovaEncomendaForm nef = new(idE);
             this.Hide();
             nef.Show();
         }
 
-        public EncPro AdicionarProdutoEncomenda()
+        public void AdicionarProdutoEncomenda()
         {
             
             EncPro encPro = new();
@@ -46,14 +46,10 @@ namespace ClientANEPC
             encPro.QuantidadeProduto = Int32.Parse(textBoxQuantidadeProduto.Text);
             encPro.IdEncomenda = GetEncomendaId();
 
-            return encPro;
+            NovaEncomendaForm.encPros.Add(encPro);
         }
 
-        public void AdicionarARequisicao()
-        {
-            NovaEncomendaForm.encPros.Add(AdicionarProdutoEncomenda());
-        }
-
+       
         private void AdicionarProdutoAEncomendaForm_Load(object sender, EventArgs e)
         {
 
