@@ -75,7 +75,7 @@ namespace ClientANEPC
 
             HttpResponseMessage response;
             List<EncPro> encPros;
-            requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/getEncomendaDetailsById/{textBoxIdEnc.Text.ToString().Trim()}";
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/encpro/getEncomendaDetailsById/{textBoxIdEnc.Text.ToString().Trim()}";
 
             try
             {

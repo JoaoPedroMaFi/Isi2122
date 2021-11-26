@@ -43,7 +43,7 @@ namespace NewApiANEPC.Controllers
 
         [HttpPost]
         [Route("getEncomendaDetailsById/{idEnc}")]
-        public async Task<ActionResult<IEnumerable<int>>> GetEncomendaDetails([FromRoute]string idEnc)
+        public async Task<ActionResult<IEnumerable<int>>> GetEncomendaDetails([FromRoute] string idEnc)
         {
             //TODO: verificar se a encomends já existe
             int intIdEnc;
