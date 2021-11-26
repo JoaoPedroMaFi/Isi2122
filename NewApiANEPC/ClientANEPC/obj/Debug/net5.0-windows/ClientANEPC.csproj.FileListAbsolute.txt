@@ -52,3 +52,5 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.EquipasForm.resources
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.NovaEncomendaForm.resources
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.ProdutosForm.resources
+D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.AdicionarProdutoAEncomendaForm.resources
+D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.NovaEncomendaForm.resources

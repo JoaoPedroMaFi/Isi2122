@@ -44,6 +44,11 @@ namespace ClientANEPC
 
             // lista de ids dos produtos e quantidades
             List<EncPro> encPros = new();
+
+            AdicionarProdutoAEncomendaForm apaef = new();
+            apaef.Show();
+            this.Hide();
+
         }
     }
 }
