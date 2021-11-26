@@ -21,9 +21,10 @@ namespace ClientANEPC
         private static string mediaType = "application/json";
         private static HttpClient client = new();
 
-        public NovaEncomendaForm()
+        public NovaEncomendaForm(int idE)
         {
             InitializeComponent();
+            labelIdEq.Text = idE.ToString();
         }
 
         private void NovaEncomendaForm_Load(object sender, EventArgs e)
@@ -46,12 +47,17 @@ namespace ClientANEPC
 
         private void buttonRequisitar_Click(object sender, EventArgs e)
         {
+            int idE;
+            idE = Int32.Parse(labelIdEq.Text);
+            List<EncPro> list;
+
             // criar encomenda
-            CreateEncomenda();
+            CreateEncomenda(idE);
+            EnviarEncPro(list);
 
         }
 
-        public void CreateEncomenda()
+        public void CreateEncomenda(int idE)
         {
             int idEq;
             string requestURI;
@@ -60,7 +66,7 @@ namespace ClientANEPC
 
             requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/addEncomenda";
 
-            idEq = Int32.Parse(textBoxIdEquipaReq.Text);
+            idEq = idE;
             try
             {
                 response = client.PostAsJsonAsync(requestURI, idEq).Result;
@@ -78,12 +84,8 @@ namespace ClientANEPC
             }
         }
 
-        public void EnviarEncPro()
+        public void EnviarEncPro(List<EncPro> list)
         {
-            //verificar se a lista esta a ser passada com os objetos ou se está a ser criada uma nova
-            List<EncPro> list;
-            AdicionarProdutoAEncomendaForm apaef = new();
-            list = apaef.AdicionarARequisicao();
 
             foreach (EncPro item in list)
             {

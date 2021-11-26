@@ -26,7 +26,9 @@ namespace ClientANEPC
 
         private void buttonNovaEncomenda_Click(object sender, EventArgs e)
         {
-            NovaEncomendaForm nef = new();
+            int idE;
+            idE = Int32.Parse(textBoxIdEquipaRequisitante.Text);
+            NovaEncomendaForm nef = new(idE);
             nef.Show();
             this.Hide();
         }

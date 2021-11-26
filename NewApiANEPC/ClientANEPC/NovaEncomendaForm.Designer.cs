@@ -30,37 +30,21 @@ namespace ClientANEPC
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxIdEquipaReq = new System.Windows.Forms.TextBox();
             this.buttonRequisitar = new System.Windows.Forms.Button();
             this.buttonEscolherProds = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelIdEq = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(191, 9);
+            this.label1.Location = new System.Drawing.Point(181, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nova Encomenda";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID da equipa requisitadora:";
-            // 
-            // textBoxIdEquipaReq
-            // 
-            this.textBoxIdEquipaReq.Location = new System.Drawing.Point(236, 60);
-            this.textBoxIdEquipaReq.Name = "textBoxIdEquipaReq";
-            this.textBoxIdEquipaReq.Size = new System.Drawing.Size(161, 23);
-            this.textBoxIdEquipaReq.TabIndex = 2;
             // 
             // buttonRequisitar
             // 
@@ -82,15 +66,33 @@ namespace ClientANEPC
             this.buttonEscolherProds.UseVisualStyleBackColor = true;
             this.buttonEscolherProds.Click += new System.EventHandler(this.buttonEscolherProds_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(183, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "ID da Equipa:";
+            // 
+            // labelIdEq
+            // 
+            this.labelIdEq.AutoSize = true;
+            this.labelIdEq.Location = new System.Drawing.Point(265, 95);
+            this.labelIdEq.Name = "labelIdEq";
+            this.labelIdEq.Size = new System.Drawing.Size(38, 15);
+            this.labelIdEq.TabIndex = 6;
+            this.labelIdEq.Text = "label3";
+            // 
             // NovaEncomendaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 254);
+            this.Controls.Add(this.labelIdEq);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonEscolherProds);
             this.Controls.Add(this.buttonRequisitar);
-            this.Controls.Add(this.textBoxIdEquipaReq);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NovaEncomendaForm";
             this.Text = "NovaEncomendaForm";
@@ -103,9 +105,9 @@ namespace ClientANEPC
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxIdEquipaReq;
         private System.Windows.Forms.Button buttonRequisitar;
         private System.Windows.Forms.Button buttonEscolherProds;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelIdEq;
     }
 }
