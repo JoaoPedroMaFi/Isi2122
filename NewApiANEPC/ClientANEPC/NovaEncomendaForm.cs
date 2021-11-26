@@ -34,16 +34,12 @@ namespace ClientANEPC
         //-------------------------------------------------------------------
         private void buttonEscolherProds_Click(object sender, EventArgs e)
         {
-            
             // criar encomenda
-            Encomenda encomenda = new();
-
-            encomenda.IdEquipa = Int32.Parse(textBoxIdEquipaReq.Text);
-            encomenda.Entregue = false;
-
+            CreateEncomenda();
 
             // lista de ids dos produtos e quantidades
             //List<EncPro> encPros = new();
+
 
             AdicionarProdutoAEncomendaForm apaef = new();
             apaef.Show();
@@ -53,7 +49,50 @@ namespace ClientANEPC
 
         private void buttonRequisitar_Click(object sender, EventArgs e)
         {
-            //AdicionarARequisicao();
+            
+
         }
+
+        public void CreateEncomenda()
+        {
+            int idEq;
+            string requestURI;
+
+            HttpResponseMessage response;
+
+            requestURI = $"https://{host}:{port.ToString().Trim()}/api/encomendas/addEncomenda";
+
+            idEq = Int32.Parse(textBoxIdEquipaReq.Text);
+            try
+            {
+                response = client.PostAsJsonAsync(requestURI, idEq).Result;
+
+                if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                {
+                    throw new Exception(response.Content.ReadAsStringAsync().Result);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+        }
+
+        public void EnviarEncPro()
+        {
+            List<EncPro> list;
+            AdicionarProdutoAEncomendaForm apaef = new();
+            list = apaef.AdicionarARequisicao();
+
+            foreach (EncPro item in list)
+            {
+                //mandar p bd um a um, pegar no id da encomenda
+                
+            }
+        }
+
+
     }
 }

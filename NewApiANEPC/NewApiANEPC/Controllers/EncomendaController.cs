@@ -96,10 +96,10 @@ namespace NewApiANEPC.Controllers
         }
 
         [HttpPost]
-        [Route("addCity")]
-        public async Task<ActionResult<IEnumerable<int>>> AddCity([FromBody] string cityName)
+        [Route("addEncomenda")]
+        public async Task<ActionResult<IEnumerable<int>>> AddEncomenda([FromBody] int equipaId)
         {
-            //TODO: verificar se a cidade já existe
+            //TODO: verificar se a encomends já existe
 
 
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
@@ -109,7 +109,7 @@ namespace NewApiANEPC.Controllers
 
             // nova entrada na tabela cidades, adiciona uma cidade
             string query = $@"
-                            INSERT INTO `mydb_isi`.`cidade` (`cidade_nome`) VALUES ('{cityName}'); ";
+                            INSERT INTO `mydb_isi`.`encomenda` (`idequipa`, `entregue`) VALUES ('{equipaId}', '0'); ";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 

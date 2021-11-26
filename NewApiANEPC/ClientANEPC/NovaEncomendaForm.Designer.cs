@@ -49,7 +49,7 @@ namespace ClientANEPC
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 58);
+            this.label2.Location = new System.Drawing.Point(74, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 15);
             this.label2.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace ClientANEPC
             // 
             // textBoxIdEquipaReq
             // 
-            this.textBoxIdEquipaReq.Location = new System.Drawing.Point(174, 55);
+            this.textBoxIdEquipaReq.Location = new System.Drawing.Point(236, 60);
             this.textBoxIdEquipaReq.Name = "textBoxIdEquipaReq";
             this.textBoxIdEquipaReq.Size = new System.Drawing.Size(161, 23);
             this.textBoxIdEquipaReq.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace ClientANEPC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 254);
+            this.ClientSize = new System.Drawing.Size(495, 254);
             this.Controls.Add(this.buttonEscolherProds);
             this.Controls.Add(this.buttonRequisitar);
             this.Controls.Add(this.textBoxIdEquipaReq);

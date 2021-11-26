@@ -28,7 +28,10 @@ namespace ClientANEPC
 
         public void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
         {
-            AdicionarARequisicao();            
+            AdicionarARequisicao();
+            NovaEncomendaForm nef = new();
+            this.Hide();
+            nef.Show();
         }
 
         public EncPro AdicionarProdutoEncomenda()
@@ -82,7 +85,8 @@ namespace ClientANEPC
 
                 string data = response.Content.ReadAsStringAsync().Result;
                 lastEncomendaId = JsonSerializer.Deserialize<int>(data, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
-                currentEncomendaId = lastEncomendaId + 1;
+                currentEncomendaId = lastEncomendaId /*+ 1*/;
+                //ao criar logo a encomenda, o last id ja vai ser da encomenda corrente
 
                 return currentEncomendaId;
 
