@@ -28,11 +28,10 @@ namespace ClientANEPC
 
         public void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
         {
-
             AdicionarARequisicao();
-            NovaEncomendaForm nef = new();
+            EncomendasForm ef = new();
             this.Hide();
-            nef.Show();
+            ef.Show();
         }
 
         public EncPro AdicionarProdutoEncomenda()

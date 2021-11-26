@@ -49,7 +49,7 @@ namespace ClientANEPC
         {
             int idE;
             idE = Int32.Parse(labelIdEq.Text);
-            List<EncPro> list;
+            List<EncPro> list = new();
 
             // criar encomenda
             CreateEncomenda(idE);
