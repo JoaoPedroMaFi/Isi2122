@@ -21,8 +21,11 @@ namespace ClientANEPC
         private static string mediaType = "application/json";
         private static HttpClient client = new();
 
+        //https://stackoverflow.com/questions/32361031/using-list-between-forms
+        public static List<EncPro> encPros;
         public NovaEncomendaForm(int idE)
         {
+            encPros = new List<EncPro>();
             InitializeComponent();
             labelIdEq.Text = idE.ToString();
         }
@@ -37,23 +40,22 @@ namespace ClientANEPC
         {
             // lista de ids dos produtos e quantidades
             //List<EncPro> encPros = new();
+            int idE;
+            idE = Int32.Parse(labelIdEq.Text);
 
-
-            AdicionarProdutoAEncomendaForm apaef = new();
+            AdicionarProdutoAEncomendaForm apaef = new(idE);
             apaef.Show();
             this.Hide();
-
         }
 
         private void buttonRequisitar_Click(object sender, EventArgs e)
         {
             int idE;
             idE = Int32.Parse(labelIdEq.Text);
-            List<EncPro> list = new();
 
             // criar encomenda
             CreateEncomenda(idE);
-            EnviarEncPro(list);
+            EnviarEncPro(encPros);
 
         }
 

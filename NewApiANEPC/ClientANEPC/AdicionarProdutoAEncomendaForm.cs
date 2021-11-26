@@ -21,17 +21,20 @@ namespace ClientANEPC
         private static string mediaType = "application/json";
         private static HttpClient client = new();
 
-        public AdicionarProdutoAEncomendaForm()
+        public AdicionarProdutoAEncomendaForm(int idE)
         {
             InitializeComponent();
+            labelIdEq.Text = idE.ToString();
         }
 
         public void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
         {
+            int idE;
+            idE = Int32.Parse(labelIdEq.Text);
             AdicionarARequisicao();
-            EncomendasForm ef = new();
+            NovaEncomendaForm nef = new(idE);
             this.Hide();
-            ef.Show();
+            nef.Show();
         }
 
         public EncPro AdicionarProdutoEncomenda()
@@ -46,13 +49,9 @@ namespace ClientANEPC
             return encPro;
         }
 
-        public List<EncPro> AdicionarARequisicao()
+        public void AdicionarARequisicao()
         {
-            List<EncPro> encPros = new();
-
-            encPros.Add(AdicionarProdutoEncomenda());
-
-            return encPros;
+            NovaEncomendaForm.encPros.Add(AdicionarProdutoEncomenda());
         }
 
         private void AdicionarProdutoAEncomendaForm_Load(object sender, EventArgs e)

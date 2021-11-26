@@ -34,6 +34,8 @@ namespace ClientANEPC
             this.textBoxIdProduto = new System.Windows.Forms.TextBox();
             this.textBoxQuantidadeProduto = new System.Windows.Forms.TextBox();
             this.buttonAdicionarARequisicao = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labelIdEq = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -78,11 +80,31 @@ namespace ClientANEPC
             this.buttonAdicionarARequisicao.UseVisualStyleBackColor = true;
             this.buttonAdicionarARequisicao.Click += new System.EventHandler(this.buttonAdicionarARequisicao_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 15);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ID Equipa:";
+            // 
+            // labelIdEq
+            // 
+            this.labelIdEq.AutoSize = true;
+            this.labelIdEq.Location = new System.Drawing.Point(187, 167);
+            this.labelIdEq.Name = "labelIdEq";
+            this.labelIdEq.Size = new System.Drawing.Size(38, 15);
+            this.labelIdEq.TabIndex = 6;
+            this.labelIdEq.Text = "label4";
+            // 
             // AdicionarProdutoAEncomendaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(205, 181);
+            this.Controls.Add(this.labelIdEq);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonAdicionarARequisicao);
             this.Controls.Add(this.textBoxQuantidadeProduto);
             this.Controls.Add(this.textBoxIdProduto);
@@ -103,5 +125,7 @@ namespace ClientANEPC
         private System.Windows.Forms.TextBox textBoxIdProduto;
         private System.Windows.Forms.TextBox textBoxQuantidadeProduto;
         private System.Windows.Forms.Button buttonAdicionarARequisicao;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelIdEq;
     }
 }
