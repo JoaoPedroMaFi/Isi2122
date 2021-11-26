@@ -32,6 +32,7 @@ namespace ClientANEPC
             this.buttonNovaEncomenda = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxIdEquipaRequisitante = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonNovaEncomenda
@@ -60,11 +61,22 @@ namespace ClientANEPC
             this.textBoxIdEquipaRequisitante.Size = new System.Drawing.Size(76, 23);
             this.textBoxIdEquipaRequisitante.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(428, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 80);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Consultar Encomendas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // EncomendasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 268);
+            this.ClientSize = new System.Drawing.Size(685, 268);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxIdEquipaRequisitante);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonNovaEncomenda);
@@ -80,5 +92,6 @@ namespace ClientANEPC
         private System.Windows.Forms.Button buttonNovaEncomenda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxIdEquipaRequisitante;
+        private System.Windows.Forms.Button button1;
     }
 }

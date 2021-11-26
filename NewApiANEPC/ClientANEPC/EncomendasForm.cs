@@ -32,5 +32,14 @@ namespace ClientANEPC
             nef.Show();
             this.Hide();
         }
+
+        //--------------------------------------------------------------------------
+        //Botao consultar encomendas
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PainelEncomendasForm pe = new();
+            this.Hide();
+            pe.Show();
+        }
     }
 }
