@@ -57,6 +57,9 @@ namespace ClientANEPC
             CreateEncomenda(idE);
             EnviarEncPro(encPros);
 
+            Form1 f1 = new();
+            this.Hide();
+            f1.Show();
         }
 
         public void CreateEncomenda(int idE)
