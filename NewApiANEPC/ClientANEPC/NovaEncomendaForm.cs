@@ -91,7 +91,7 @@ namespace ClientANEPC
             }
         }
 
-        //problema: nao chega nada a esta lista
+       
         public void EnviarEncPro(List<EncPro> list)
         {
 
