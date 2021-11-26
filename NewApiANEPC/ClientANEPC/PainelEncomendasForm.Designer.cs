@@ -58,6 +58,7 @@ namespace ClientANEPC
             this.listView1.Size = new System.Drawing.Size(234, 195);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // PainelEncomendasForm
