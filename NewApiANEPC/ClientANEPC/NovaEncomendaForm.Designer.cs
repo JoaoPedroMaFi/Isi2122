@@ -70,6 +70,7 @@ namespace ClientANEPC
             this.buttonRequisitar.TabIndex = 3;
             this.buttonRequisitar.Text = "Requisitar";
             this.buttonRequisitar.UseVisualStyleBackColor = true;
+            this.buttonRequisitar.Click += new System.EventHandler(this.buttonRequisitar_Click);
             // 
             // buttonEscolherProds
             // 
