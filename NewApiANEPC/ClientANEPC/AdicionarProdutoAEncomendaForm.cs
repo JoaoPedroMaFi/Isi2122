@@ -86,8 +86,7 @@ namespace ClientANEPC
 
                 string data = response.Content.ReadAsStringAsync().Result;
                 lastEncomendaId = JsonSerializer.Deserialize<int>(data, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
-                currentEncomendaId = lastEncomendaId /*+ 1*/;
-                //ao criar logo a encomenda, o last id ja vai ser da encomenda corrente
+                currentEncomendaId = lastEncomendaId + 1;
 
                 return currentEncomendaId;
 

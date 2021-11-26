@@ -80,14 +80,35 @@ namespace ClientANEPC
 
         public void EnviarEncPro()
         {
+            //verificar se a lista esta a ser passada com os objetos ou se está a ser criada uma nova
             List<EncPro> list;
             AdicionarProdutoAEncomendaForm apaef = new();
             list = apaef.AdicionarARequisicao();
 
             foreach (EncPro item in list)
             {
-                //mandar p bd um a um, pegar no id da encomenda
-                
+                string requestURI;
+
+                HttpResponseMessage response;
+
+                requestURI = $"https://{host}:{port.ToString().Trim()}/api/encpro/addEncPro";
+
+                try
+                {
+                    response = client.PostAsJsonAsync(requestURI, item).Result;
+
+                    if (!response.StatusCode.Equals(HttpStatusCode.OK))
+                    {
+                        throw new Exception(response.Content.ReadAsStringAsync().Result);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.StackTrace);
+                }
+
             }
         }
 
