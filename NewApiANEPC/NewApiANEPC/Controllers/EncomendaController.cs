@@ -23,14 +23,13 @@ namespace NewApiANEPC.Controllers
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
-            List<Cidade> list = new();
+            List<Encomenda> list = new();
             //open connection
             await connection.OpenAsync();
 
             //cidade_nome ------> como estava antes no select
             string query = @"
-                            SELECT *
-                            FROM mydb_isi.cidade;";
+                            SELECT * FROM mydb_isi.encomenda;";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 
@@ -38,11 +37,12 @@ namespace NewApiANEPC.Controllers
 
             while (await reader.ReadAsync())
             {
-                Cidade c = new();
-                c.IdCidade = reader.GetInt32(0);
-                c.CidadeNome = reader.GetString(1);
+                Encomenda enc = new();
+                enc.IdEncomenda = reader.GetInt32(0);
+                enc.IdEquipa = reader.GetInt32(1);
+                enc.Entregue = reader.GetBoolean(2);
 
-                list.Add(c);
+                list.Add(enc);
 
             }
 

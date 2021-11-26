@@ -19,6 +19,9 @@
     <Compile Update="NovaEncomendaForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PainelEncomendasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ProdutosForm.cs">
       <SubType>Form</SubType>
     </Compile>
