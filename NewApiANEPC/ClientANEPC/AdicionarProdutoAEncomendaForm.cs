@@ -18,14 +18,12 @@ namespace ClientANEPC
             InitializeComponent();
         }
 
-        private void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
+        public void buttonAdicionarARequisicao_Click(object sender, EventArgs e)
         {
-            
-
-
+            AdicionarARequisicao();            
         }
 
-        public void AdicionarProdutoEncomenda()
+        public EncPro AdicionarProdutoEncomenda()
         {
             
             EncPro encPro = new();
@@ -33,7 +31,16 @@ namespace ClientANEPC
             encPro.IdProduto = Int32.Parse(textBoxIdProduto.Text);
             encPro.QuantidadeProduto = Int32.Parse(textBoxQuantidadeProduto.Text);
 
+            return encPro;
+        }
 
+        public List<EncPro> AdicionarARequisicao()
+        {
+            List<EncPro> encPros = new();
+
+            encPros.Add(AdicionarProdutoEncomenda());
+
+            return encPros;
         }
     }
 }
