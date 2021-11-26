@@ -62,8 +62,8 @@ namespace NewApiANEPC.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("getByName")]
-        public async Task<ActionResult<IEnumerable<int>>> GetCidadesByNameAsync(string cityName)
+        [Route("getId")]
+        public async Task<ActionResult<IEnumerable<int>>> GetCidadesIdAsync()
         {
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
             using var connection = new MySqlConnection(sqlConStr);
@@ -72,17 +72,17 @@ namespace NewApiANEPC.Controllers
 
             // retorna o id da cidade, entrando o nome dela
             string query = $@"
-                            SELECT idcidade 
-                            FROM mydb_isi.cidade
-                            Where cidade_nome like '{cityName}'";
+                            SELECT idcidade FROM mydb_isi.cidade ORDER BY idcidade DESC LIMIT 1";
             using var command = new MySqlCommand(query, connection);
             using var reader = await command.ExecuteReaderAsync();
 
-            var value=0;
+
+
+
             while (await reader.ReadAsync())
             {
-                
-                   // value = reader.GetValue(0);
+
+                var value = reader.GetValue(0);
             }
 
 
@@ -92,7 +92,7 @@ namespace NewApiANEPC.Controllers
             await connection.CloseAsync();
 
 
-            return Ok(value);
+            return Ok();
         }
 
         [HttpPost]
