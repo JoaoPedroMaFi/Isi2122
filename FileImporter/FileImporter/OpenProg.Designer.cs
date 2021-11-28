@@ -33,6 +33,7 @@ namespace FileImporter
             this.label1 = new System.Windows.Forms.Label();
             this.BtnViewData = new System.Windows.Forms.Button();
             this.BtnImportFiles = new System.Windows.Forms.Button();
+            this.Off = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,7 @@ namespace FileImporter
             // 
             // BtnViewData
             // 
-            this.BtnViewData.Location = new System.Drawing.Point(81, 251);
+            this.BtnViewData.Location = new System.Drawing.Point(36, 169);
             this.BtnViewData.Name = "BtnViewData";
             this.BtnViewData.Size = new System.Drawing.Size(100, 39);
             this.BtnViewData.TabIndex = 1;
@@ -67,7 +68,7 @@ namespace FileImporter
             // 
             // BtnImportFiles
             // 
-            this.BtnImportFiles.Location = new System.Drawing.Point(283, 251);
+            this.BtnImportFiles.Location = new System.Drawing.Point(344, 169);
             this.BtnImportFiles.Name = "BtnImportFiles";
             this.BtnImportFiles.Size = new System.Drawing.Size(100, 39);
             this.BtnImportFiles.TabIndex = 2;
@@ -75,11 +76,22 @@ namespace FileImporter
             this.BtnImportFiles.UseVisualStyleBackColor = true;
             this.BtnImportFiles.Click += new System.EventHandler(this.BtnImportFiles_Click);
             // 
+            // Off
+            // 
+            this.Off.Location = new System.Drawing.Point(185, 169);
+            this.Off.Name = "Off";
+            this.Off.Size = new System.Drawing.Size(100, 39);
+            this.Off.TabIndex = 3;
+            this.Off.Text = "Exit";
+            this.Off.UseVisualStyleBackColor = true;
+            this.Off.Click += new System.EventHandler(this.Off_Click);
+            // 
             // OpenProg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 450);
+            this.ClientSize = new System.Drawing.Size(490, 258);
+            this.Controls.Add(this.Off);
             this.Controls.Add(this.BtnImportFiles);
             this.Controls.Add(this.BtnViewData);
             this.Controls.Add(this.panel1);
@@ -97,6 +109,7 @@ namespace FileImporter
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnViewData;
         private System.Windows.Forms.Button BtnImportFiles;
+        private System.Windows.Forms.Button Off;
     }
 }
 

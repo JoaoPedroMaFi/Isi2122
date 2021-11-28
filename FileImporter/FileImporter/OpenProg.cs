@@ -22,6 +22,7 @@ namespace FileImporter
             FilesImport filesImport = new FilesImport();
             filesImport.ShowDialog();
             filesImport.Hide();
+            this.Hide();
         }
 
         private void BtnViewData_Click(object sender, EventArgs e)
@@ -29,6 +30,12 @@ namespace FileImporter
             ViewData view = new ViewData();
             view.ShowDialog();
             view.Hide();
+            this.Hide();
+        }
+
+        private void Off_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

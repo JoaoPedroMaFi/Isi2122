@@ -64,5 +64,12 @@ namespace FileImporter
 
             return filePath;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            OpenProg openProg = new OpenProg();
+            openProg.Show();
+            this.Close();
+        }
     }
 }

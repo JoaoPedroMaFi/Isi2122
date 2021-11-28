@@ -41,6 +41,7 @@ namespace FileImporter.Views
                     "\t" + iso.Respeitou.ToString() ;
                 //MessageBox.Show(bx.Text);
             }
+
             return bx;
         }
     }

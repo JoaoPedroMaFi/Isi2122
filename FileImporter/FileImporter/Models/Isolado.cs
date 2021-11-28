@@ -12,6 +12,11 @@ namespace FileImporter.Models
     public class Isolado
     {
         /// <summary>
+        /// Date of the inspection
+        /// </summary>
+        public string Data { get; set; }
+
+        /// <summary>
         /// id of the inspectioned, infected person
         /// </summary>
         public int UtentNumber { get; set; }
@@ -30,11 +35,6 @@ namespace FileImporter.Models
         /// last name of the inspectioned person
         /// </summary>
         public string Lastname { get; set; }
-
-        /// <summary>
-        /// Date of the inspection
-        /// </summary>
-        public string Data { get; set; }
 
         /// <summary>
         /// boolean dictating if the person was isolating or not

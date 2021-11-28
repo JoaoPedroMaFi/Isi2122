@@ -12,40 +12,67 @@ namespace FileImporter
         public ViewData()
         {
             InitializeComponent();
-           
+
         }
 
-        private void DisplayInfo(RichTextBox txtBox)
+        private void DisplayInfo()
         {
             List<Isolado> isoladosList = new List<Isolado>();
             // DB Context
             Mydb_filesexportEntities db = new Mydb_filesexportEntities();
+            ListView listview = new ListView();
+            //ListViewItem item = new ListViewItem();
+            ListViewFile.Items.Clear();
+            string estado;
             List<isolado> isolados = db.isolado.ToList();
-            MessageBox.Show(isolados.ToString());
+            //MessageBox.Show(isolados.ToString());
             foreach (isolado iso in isolados)
             {
+               
                 Isolado isoladonovo = new Isolado();
-                isoladonovo.Data = iso.data;
-                isoladonovo.Firstname = iso.firstname;
-                isoladonovo.Lastname = iso.lastname;
-                isoladonovo.Respeitou = Convert.ToBoolean(iso.respeito);
-                isoladonovo.UtentNumber = iso.utentNumber;
-                isoladosList.Add(isoladonovo);
+                if (iso.respeito == 1)
+                {
+                     estado = "Sim";
+                }
+                else
+                {
+                    estado = "Não";
+                }
+                string[] row = {
+                 iso.data,
+                 iso.firstname,
+                 iso.lastname,
+                 iso.utentNumber.ToString(),
+                 estado,
+                 iso.idequipa.ToString()
+                };
+               
+
+                ListViewItem item = new ListViewItem(row);
+                
+                ListViewFile.Items.Add(item);
             }
 
-            foreach (Isolado iso in isoladosList)
-            {
-                RtBView.Text += iso.Data + "\t\t" + iso.Firstname + "\t\t" + iso.Lastname + "\t\t" + iso.UtentNumber +
-                    "\t\t" + iso.Respeitou.ToString() + "\n";
-                //MessageBox.Show(bx.Text);
-            }
-        
+            //foreach (Isolado iso in isoladosList)
+            //{
+            //    RtBView.Text += iso.Data + "\t\t" + iso.Firstname + "\t\t" + iso.Lastname + "\t\t" + iso.UtentNumber +
+            //        "\t\t" + iso.Respeitou.ToString() + "\n";
+            //    //MessageBox.Show(bx.Text);
+            //}
+
 
         }
 
         private void btnShowData_Click(object sender, EventArgs e)
         {
-            DisplayInfo(RtBView);
+            DisplayInfo();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenProg openProg = new OpenProg();
+            openProg.Show();
+            this.Close();
         }
     }
 }

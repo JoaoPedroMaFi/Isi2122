@@ -55,3 +55,4 @@ D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windo
 D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.NovaEncomendaForm.resources
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.csproj.AssemblyReference.cache
 D:\IPCA\3ano\1semestre\isi\tp1Git\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.PainelEncomendasForm.resources
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewApiANEPC\ClientANEPC\obj\Debug\net5.0-windows\ClientANEPC.PainelEncomendasForm.resources
