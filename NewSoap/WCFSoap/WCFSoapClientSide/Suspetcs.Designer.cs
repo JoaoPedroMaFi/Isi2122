@@ -36,6 +36,10 @@ namespace WCFSoapClientSide
             this.BtnInsereSuspeito = new System.Windows.Forms.Button();
             this.idInfLabel = new System.Windows.Forms.Label();
             this.TxIdInf = new System.Windows.Forms.TextBox();
+            this.BtnBack = new System.Windows.Forms.Button();
+            this.ListViewInfectados1 = new System.Windows.Forms.ListView();
+            this.id_Inf = new System.Windows.Forms.ColumnHeader();
+            this.Nome = new System.Windows.Forms.ColumnHeader();
             this.SuspendLayout();
             // 
             // label7
@@ -72,7 +76,7 @@ namespace WCFSoapClientSide
             // 
             // BtnInsereSuspeito
             // 
-            this.BtnInsereSuspeito.Location = new System.Drawing.Point(108, 194);
+            this.BtnInsereSuspeito.Location = new System.Drawing.Point(108, 175);
             this.BtnInsereSuspeito.Name = "BtnInsereSuspeito";
             this.BtnInsereSuspeito.Size = new System.Drawing.Size(100, 23);
             this.BtnInsereSuspeito.TabIndex = 16;
@@ -96,11 +100,45 @@ namespace WCFSoapClientSide
             this.TxIdInf.Size = new System.Drawing.Size(100, 23);
             this.TxIdInf.TabIndex = 18;
             // 
+            // BtnBack
+            // 
+            this.BtnBack.Location = new System.Drawing.Point(108, 215);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(100, 23);
+            this.BtnBack.TabIndex = 19;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+            // 
+            // ListViewInfectados1
+            // 
+            this.ListViewInfectados1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id_Inf,
+            this.Nome});
+            this.ListViewInfectados1.HideSelection = false;
+            this.ListViewInfectados1.Location = new System.Drawing.Point(277, 36);
+            this.ListViewInfectados1.Name = "ListViewInfectados1";
+            this.ListViewInfectados1.Size = new System.Drawing.Size(164, 174);
+            this.ListViewInfectados1.TabIndex = 20;
+            this.ListViewInfectados1.UseCompatibleStateImageBehavior = false;
+            this.ListViewInfectados1.View = System.Windows.Forms.View.Details;
+            // 
+            // id_Inf
+            // 
+            this.id_Inf.Text = "Id_inf";
+            // 
+            // Nome
+            // 
+            this.Nome.Text = "Nome";
+            this.Nome.Width = 120;
+            // 
             // Suspetcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 250);
+            this.ClientSize = new System.Drawing.Size(493, 250);
+            this.Controls.Add(this.ListViewInfectados1);
+            this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.TxIdInf);
             this.Controls.Add(this.idInfLabel);
             this.Controls.Add(this.BtnInsereSuspeito);
@@ -110,6 +148,7 @@ namespace WCFSoapClientSide
             this.Controls.Add(this.label7);
             this.Name = "Suspetcs";
             this.Text = "Suspetcs";
+            this.Load += new System.EventHandler(this.Suspetcs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +163,9 @@ namespace WCFSoapClientSide
         private System.Windows.Forms.Button BtnInsereSuspeito;
         private System.Windows.Forms.Label idInfLabel;
         private System.Windows.Forms.TextBox TxIdInf;
+        private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.ListView ListViewInfectados1;
+        private System.Windows.Forms.ColumnHeader id_Inf;
+        private System.Windows.Forms.ColumnHeader Nome;
     }
 }

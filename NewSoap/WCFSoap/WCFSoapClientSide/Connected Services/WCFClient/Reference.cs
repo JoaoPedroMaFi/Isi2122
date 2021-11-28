@@ -194,23 +194,17 @@ namespace WCFClient
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/GetAllSuspects", ReplyAction="http://tempuri.org/IClient/GetAllSuspectsResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Suspeito>> GetAllSuspectsAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/GetAll", ReplyAction="http://tempuri.org/IClient/GetAllResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Infectado>> GetAllAsync(int idPerson);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/IndicateInfetion", ReplyAction="http://tempuri.org/IClient/IndicateInfetionResponse")]
-        System.Threading.Tasks.Task IndicateInfetionAsync(WCFClient.Equipa equipa, WCFClient.Infectado infectado);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/IndicateInfetionList", ReplyAction="http://tempuri.org/IClient/IndicateInfetionListResponse")]
-        System.Threading.Tasks.Task IndicateInfetionListAsync(System.Collections.Generic.List<WCFClient.Infectado> list);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/InsertNewInfectedClient", ReplyAction="http://tempuri.org/IClient/InsertNewInfectedClientResponse")]
-        System.Threading.Tasks.Task<bool> InsertNewInfectedClientAsync(string firstName, string lastName, int idEquipa);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/InsertNewSuspectClient", ReplyAction="http://tempuri.org/IClient/InsertNewSuspectClientResponse")]
-        System.Threading.Tasks.Task InsertNewSuspectClientAsync(string firstName, string lastName, int id, int idInfetado);
+        System.Threading.Tasks.Task<int> IndicateInfetionAsync(WCFClient.Infectado infectado);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/IndicateSuspect", ReplyAction="http://tempuri.org/IClient/IndicateSuspectResponse")]
         System.Threading.Tasks.Task IndicateSuspectAsync(string idequipa, WCFClient.Suspeito suspeitoObj);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/CreateTeam", ReplyAction="http://tempuri.org/IClient/CreateTeamResponse")]
+        System.Threading.Tasks.Task CreateTeamAsync(WCFClient.Equipa equipa);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IClient/ShowTeams", ReplyAction="http://tempuri.org/IClient/ShowTeamsResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Equipa>> ShowTeamsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3-preview3.21351.2")]
@@ -273,34 +267,24 @@ namespace WCFClient
             return base.Channel.GetAllSuspectsAsync();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Infectado>> GetAllAsync(int idPerson)
+        public System.Threading.Tasks.Task<int> IndicateInfetionAsync(WCFClient.Infectado infectado)
         {
-            return base.Channel.GetAllAsync(idPerson);
-        }
-        
-        public System.Threading.Tasks.Task IndicateInfetionAsync(WCFClient.Equipa equipa, WCFClient.Infectado infectado)
-        {
-            return base.Channel.IndicateInfetionAsync(equipa, infectado);
-        }
-        
-        public System.Threading.Tasks.Task IndicateInfetionListAsync(System.Collections.Generic.List<WCFClient.Infectado> list)
-        {
-            return base.Channel.IndicateInfetionListAsync(list);
-        }
-        
-        public System.Threading.Tasks.Task<bool> InsertNewInfectedClientAsync(string firstName, string lastName, int idEquipa)
-        {
-            return base.Channel.InsertNewInfectedClientAsync(firstName, lastName, idEquipa);
-        }
-        
-        public System.Threading.Tasks.Task InsertNewSuspectClientAsync(string firstName, string lastName, int id, int idInfetado)
-        {
-            return base.Channel.InsertNewSuspectClientAsync(firstName, lastName, id, idInfetado);
+            return base.Channel.IndicateInfetionAsync(infectado);
         }
         
         public System.Threading.Tasks.Task IndicateSuspectAsync(string idequipa, WCFClient.Suspeito suspeitoObj)
         {
             return base.Channel.IndicateSuspectAsync(idequipa, suspeitoObj);
+        }
+        
+        public System.Threading.Tasks.Task CreateTeamAsync(WCFClient.Equipa equipa)
+        {
+            return base.Channel.CreateTeamAsync(equipa);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<WCFClient.Equipa>> ShowTeamsAsync()
+        {
+            return base.Channel.ShowTeamsAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

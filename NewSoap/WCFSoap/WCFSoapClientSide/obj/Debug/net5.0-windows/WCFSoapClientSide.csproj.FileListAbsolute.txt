@@ -55,3 +55,5 @@ C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\G
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.pdb
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.genruntimeconfig.cache
 C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Documents\GitHub\Isi2122\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.Suspetcs.resources
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.SuspectsView.resources
+C:\Users\Pedro\OneDrive - Instituto Politécnico do Cávado e do Ave\Desktop\NewSoap\WCFSoap\WCFSoapClientSide\obj\Debug\net5.0-windows\WCFSoapClientSide.Suspetcs.resources

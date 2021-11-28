@@ -28,48 +28,39 @@ namespace WCFSoap.Services
             {
                 
                 Infectado infetadoClasse = new Infectado();
+                infetadoClasse.Idpessoa = inf.idinfetado;
                 infetadoClasse.Firstname = inf.firstname;
                 infetadoClasse.Laststname = inf.lastname;
+                infetadoClasse.Idequipa = inf.idequipa;
                 infetados.Add(infetadoClasse);
 
             }
 
             return infetados;
 
-            //var list = from inf in db.infetadoes
-            //           select new
-            //           {
-            //               inf.firstname,
-            //               inf.lastname
-            //           };
-            //return list.ToList();
+           
         }
 
-        public List<Infectado> GetAll(int idPerson)
+        /// <summary>
+        /// Indica um infetado
+        /// </summary>
+        /// <returns></returns>
+        public void IndicateInfetion( Infectado infectado)
         {
-            throw new NotImplementedException();
-        }
-
-        // Indica uma equipa e um infetado
-        public void IndicateInfetion(Equipa equipa, Infectado infectado)
-        {
-            equipa equipaNova = new equipa();
-            equipaNova.nome = equipa.Nome;
-            equipaNova.idequipa = equipa.Idequipa;
-            db.equipas.Add(equipaNova);
-            db.SaveChanges();
-
+         
             infetado infected = new infetado();
-            infected.idinfetado = infectado.Idpessoa;
+            //infected.idinfetado = infectado.Idpessoa;
             infected.firstname = infectado.Firstname;
             infected.lastname = infectado.Laststname;
             infected.idequipa = infectado.Idequipa;
             db.infetadoes.Add(infected);
             db.SaveChanges();
-
+           
         }
-
-        // indica um suspeito
+        /// <summary>
+        /// Indica um suspeito
+        /// </summary>
+        /// <returns></returns>
         public void IndicateSuspect(string idequipa, Suspeito suspeitoObj)
         {
             
@@ -102,32 +93,38 @@ namespace WCFSoap.Services
             return suspeitoList;
 
         }
-        public void IndicateInfetionList(List<Infectado> list)
+        /// <summary>
+        /// Cria uma equipa
+        /// </summary>
+        /// <param name="equipa"></param>
+        public void CreateTeam(Equipa equipa)
         {
-            throw new NotImplementedException();
+            equipa equipaNova = new equipa();
+            equipaNova.nome = equipa.Nome;
+            //equipaNova.idequipa = equipa.Idequipa;
+            db.equipas.Add(equipaNova);
+            db.SaveChanges();
         }
 
-        public bool InsertNewInfectedClient(string name, string lastName, int idEquipa)
+        /// <summary>
+        /// Lista todas as equipas
+        /// </summary>
+        /// <returns></returns>
+        public List<Equipa> ShowTeams()
         {
-            string name1, lastName1;
-            int idEquipa1;
-            name1 = name;
-            lastName1 = lastName;
-            idEquipa1 = idEquipa;
-            //InsertNewInfected(name1, lastName1, idEquipa1);
-            return true;
+            List<Equipa> equipaList = new List<Equipa>();
+            List<equipa> equipadb = db.equipas.ToList();
+            foreach (equipa equi in equipadb)
+            {
+
+                Equipa equipaClasse = new Equipa();
+                equipaClasse.Idequipa = equi.idequipa;
+                equipaClasse.Nome = equi.nome;
+                equipaList.Add(equipaClasse);
+
+            }
+
+            return equipaList;
         }
-
-        public void InsertNewSuspectClient(string name, string lastName, int id, int idInfetado)
-        {
-            string name1, lastName1;
-            int id1;
-            name1 = name;
-            lastName1 = lastName;
-            id1 = id;
-            //InsertNewInfected(name1, lastName1, id1);
-
-        }
-
     }
 }

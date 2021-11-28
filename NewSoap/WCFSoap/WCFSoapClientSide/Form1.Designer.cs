@@ -32,13 +32,9 @@ namespace WCFSoapClientSide
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.idEquipaLabel = new System.Windows.Forms.TextBox();
             this.nomeEquipa = new System.Windows.Forms.TextBox();
-            this.idInfetado = new System.Windows.Forms.TextBox();
             this.firstNameInfetado = new System.Windows.Forms.TextBox();
             this.lastNameInfetado = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,6 +42,13 @@ namespace WCFSoapClientSide
             this.ButtonAllInfecteds = new System.Windows.Forms.Button();
             this.BtnInsertListSuspects = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.ListViewEquipas = new System.Windows.Forms.ListView();
+            this.id = new System.Windows.Forms.ColumnHeader();
+            this.Nome = new System.Windows.Forms.ColumnHeader();
+            this.iDEquipa = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.BtnViewEquipas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -69,32 +72,18 @@ namespace WCFSoapClientSide
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(450, 68);
+            this.label3.Location = new System.Drawing.Point(440, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "Infectado";
             // 
-            // idEquipaLabel
-            // 
-            this.idEquipaLabel.Location = new System.Drawing.Point(75, 102);
-            this.idEquipaLabel.Name = "idEquipaLabel";
-            this.idEquipaLabel.Size = new System.Drawing.Size(100, 23);
-            this.idEquipaLabel.TabIndex = 3;
-            // 
             // nomeEquipa
             // 
-            this.nomeEquipa.Location = new System.Drawing.Point(75, 152);
+            this.nomeEquipa.Location = new System.Drawing.Point(48, 105);
             this.nomeEquipa.Name = "nomeEquipa";
             this.nomeEquipa.Size = new System.Drawing.Size(100, 23);
             this.nomeEquipa.TabIndex = 4;
-            // 
-            // idInfetado
-            // 
-            this.idInfetado.Location = new System.Drawing.Point(428, 102);
-            this.idInfetado.Name = "idInfetado";
-            this.idInfetado.Size = new System.Drawing.Size(100, 23);
-            this.idInfetado.TabIndex = 5;
             // 
             // firstNameInfetado
             // 
@@ -110,28 +99,10 @@ namespace WCFSoapClientSide
             this.lastNameInfetado.Size = new System.Drawing.Size(100, 23);
             this.lastNameInfetado.TabIndex = 7;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "ID";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(393, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(18, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "ID";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(26, 160);
+            this.label6.Location = new System.Drawing.Point(2, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 15);
             this.label6.TabIndex = 10;
@@ -140,7 +111,7 @@ namespace WCFSoapClientSide
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(371, 160);
+            this.label7.Location = new System.Drawing.Point(379, 160);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 15);
             this.label7.TabIndex = 11;
@@ -157,7 +128,7 @@ namespace WCFSoapClientSide
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(226, 151);
+            this.button1.Location = new System.Drawing.Point(422, 248);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);
             this.button1.TabIndex = 13;
@@ -177,7 +148,7 @@ namespace WCFSoapClientSide
             // 
             // BtnInsertListSuspects
             // 
-            this.BtnInsertListSuspects.Location = new System.Drawing.Point(416, 313);
+            this.BtnInsertListSuspects.Location = new System.Drawing.Point(422, 313);
             this.BtnInsertListSuspects.Name = "BtnInsertListSuspects";
             this.BtnInsertListSuspects.Size = new System.Drawing.Size(112, 23);
             this.BtnInsertListSuspects.TabIndex = 15;
@@ -195,11 +166,74 @@ namespace WCFSoapClientSide
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(48, 134);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(106, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Criar equipa";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // ListViewEquipas
+            // 
+            this.ListViewEquipas.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.id,
+            this.Nome});
+            this.ListViewEquipas.HideSelection = false;
+            this.ListViewEquipas.Location = new System.Drawing.Point(178, 96);
+            this.ListViewEquipas.Name = "ListViewEquipas";
+            this.ListViewEquipas.Size = new System.Drawing.Size(168, 157);
+            this.ListViewEquipas.TabIndex = 18;
+            this.ListViewEquipas.UseCompatibleStateImageBehavior = false;
+            this.ListViewEquipas.View = System.Windows.Forms.View.Details;
+            // 
+            // id
+            // 
+            this.id.Text = "id";
+            // 
+            // Nome
+            // 
+            this.Nome.Text = "Nome";
+            this.Nome.Width = 120;
+            // 
+            // iDEquipa
+            // 
+            this.iDEquipa.Location = new System.Drawing.Point(428, 105);
+            this.iDEquipa.Name = "iDEquipa";
+            this.iDEquipa.Size = new System.Drawing.Size(100, 23);
+            this.iDEquipa.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(362, 105);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 15);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "ID Equipa";
+            // 
+            // BtnViewEquipas
+            // 
+            this.BtnViewEquipas.Location = new System.Drawing.Point(212, 259);
+            this.BtnViewEquipas.Name = "BtnViewEquipas";
+            this.BtnViewEquipas.Size = new System.Drawing.Size(106, 23);
+            this.BtnViewEquipas.TabIndex = 21;
+            this.BtnViewEquipas.Text = "Listar Equipas";
+            this.BtnViewEquipas.UseVisualStyleBackColor = true;
+            this.BtnViewEquipas.Click += new System.EventHandler(this.BtnViewEquipas_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 450);
+            this.Controls.Add(this.BtnViewEquipas);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.iDEquipa);
+            this.Controls.Add(this.ListViewEquipas);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.BtnInsertListSuspects);
             this.Controls.Add(this.ButtonAllInfecteds);
@@ -207,13 +241,9 @@ namespace WCFSoapClientSide
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lastNameInfetado);
             this.Controls.Add(this.firstNameInfetado);
-            this.Controls.Add(this.idInfetado);
             this.Controls.Add(this.nomeEquipa);
-            this.Controls.Add(this.idEquipaLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -229,13 +259,9 @@ namespace WCFSoapClientSide
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox idEquipaLabel;
         private System.Windows.Forms.TextBox nomeEquipa;
-        private System.Windows.Forms.TextBox idInfetado;
         private System.Windows.Forms.TextBox firstNameInfetado;
         private System.Windows.Forms.TextBox lastNameInfetado;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -243,5 +269,12 @@ namespace WCFSoapClientSide
         private System.Windows.Forms.Button ButtonAllInfecteds;
         private System.Windows.Forms.Button BtnInsertListSuspects;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListView ListViewEquipas;
+        private System.Windows.Forms.ColumnHeader id;
+        private System.Windows.Forms.ColumnHeader Nome;
+        private System.Windows.Forms.TextBox iDEquipa;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button BtnViewEquipas;
     }
 }

@@ -31,7 +31,10 @@ namespace WCFSoapClientSide
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.RTBoxSus = new System.Windows.Forms.RichTextBox();
+            this.ListViewSuspeitos = new System.Windows.Forms.ListView();
+            this.firstname = new System.Windows.Forms.ColumnHeader();
+            this.lastname = new System.Windows.Forms.ColumnHeader();
+            this.BtnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,20 +57,46 @@ namespace WCFSoapClientSide
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // RTBoxSus
+            // ListViewSuspeitos
             // 
-            this.RTBoxSus.Location = new System.Drawing.Point(37, 73);
-            this.RTBoxSus.Name = "RTBoxSus";
-            this.RTBoxSus.Size = new System.Drawing.Size(673, 250);
-            this.RTBoxSus.TabIndex = 4;
-            this.RTBoxSus.Text = "";
+            this.ListViewSuspeitos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.firstname,
+            this.lastname});
+            this.ListViewSuspeitos.HideSelection = false;
+            this.ListViewSuspeitos.Location = new System.Drawing.Point(37, 82);
+            this.ListViewSuspeitos.Name = "ListViewSuspeitos";
+            this.ListViewSuspeitos.Size = new System.Drawing.Size(485, 260);
+            this.ListViewSuspeitos.TabIndex = 4;
+            this.ListViewSuspeitos.UseCompatibleStateImageBehavior = false;
+            this.ListViewSuspeitos.View = System.Windows.Forms.View.Details;
+            // 
+            // firstname
+            // 
+            this.firstname.Text = "Firstname";
+            this.firstname.Width = 200;
+            // 
+            // lastname
+            // 
+            this.lastname.Text = "Lastname";
+            this.lastname.Width = 200;
+            // 
+            // BtnBack
+            // 
+            this.BtnBack.Location = new System.Drawing.Point(543, 32);
+            this.BtnBack.Name = "BtnBack";
+            this.BtnBack.Size = new System.Drawing.Size(75, 23);
+            this.BtnBack.TabIndex = 5;
+            this.BtnBack.Text = "Back";
+            this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // SuspectsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.RTBoxSus);
+            this.ClientSize = new System.Drawing.Size(800, 351);
+            this.Controls.Add(this.BtnBack);
+            this.Controls.Add(this.ListViewSuspeitos);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "SuspectsView";
@@ -81,6 +110,9 @@ namespace WCFSoapClientSide
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox RTBoxSus;
+        private System.Windows.Forms.ListView ListViewSuspeitos;
+        private System.Windows.Forms.ColumnHeader firstname;
+        private System.Windows.Forms.ColumnHeader lastname;
+        private System.Windows.Forms.Button BtnBack;
     }
 }

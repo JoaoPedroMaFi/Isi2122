@@ -22,10 +22,30 @@ namespace WCFSoapClientSide
             WCFClient.ClientClient client = new();
             List<WCFClient.Infectado> list = new();
             list = client.GetAllInfectedAsync().Result;
+            ListViewInfectados.Items.Clear();
+            //MessageBox.Show(isolados.ToString());
             foreach (WCFClient.Infectado inf in list)
             {
-                RTBox.Text += inf.Firstname +"\t" + inf.Laststname;
+                string[] row = {
+                 inf.Idpessoa.ToString(),
+                 inf.Firstname,
+                 inf.Laststname,
+                 inf.Idequipa.ToString()
+                };
+
+
+                ListViewItem item = new ListViewItem(row);
+
+                ListViewInfectados.Items.Add(item);
             }
+            
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Form1 form = new();
+            form.Show();
+            this.Close();
         }
     }
 }
