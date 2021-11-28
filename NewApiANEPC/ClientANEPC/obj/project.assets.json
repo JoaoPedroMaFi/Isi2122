@@ -5280,19 +5280,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\Yuri Lemos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
+      "projectUniqueName": "C:\\Users\\Yuri Lemos\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
       "projectName": "ClientANEPC",
-      "projectPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
-      "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pedro\\OneDrive - Instituto Politécnico do Cávado e do Ave\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\obj\\",
+      "projectPath": "C:\\Users\\Yuri Lemos\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\ClientANEPC.csproj",
+      "packagesPath": "C:\\Users\\Yuri Lemos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yuri Lemos\\Documents\\GitHub\\Isi2122\\NewApiANEPC\\ClientANEPC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yuri Lemos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
