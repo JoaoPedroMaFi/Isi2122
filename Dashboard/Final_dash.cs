@@ -81,5 +81,13 @@ namespace Dashboard
             Bx_statusApi.Clear();
             Bx_statusApi = RestHelper.BeautyJsonStatus(response, Bx_statusApi);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

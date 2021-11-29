@@ -1,0 +1,1 @@
+SELECT idproduct, descricao, SUM(quantidade) as 'Total' from encpro inner join produto on idproduct = produto.idproduto group by(idproduct) order by SUM(quantidade) DESC Limit 5;

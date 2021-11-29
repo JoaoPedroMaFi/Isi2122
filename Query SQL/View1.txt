@@ -1,0 +1,16 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `view1` AS
+    SELECT 
+        `encpro`.`idproduct` AS `idproduct`,
+        `encpro`.`idencomend` AS `idencomend`,
+        `produto`.`descricao` AS `descricao`,
+        `encpro`.`quantidade` AS `quantidade`,
+        `produto`.`preco` AS `preco`,
+        `encomenda`.`idequipa` AS `idequipa`
+    FROM
+        ((`encpro`
+        JOIN `produto` ON ((`encpro`.`idproduct` = `produto`.`idproduto`)))
+        JOIN `encomenda` ON ((`encomenda`.`idencomenda` = `encpro`.`idencomend`)))

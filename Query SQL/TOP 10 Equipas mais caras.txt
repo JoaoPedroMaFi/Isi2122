@@ -1,0 +1,12 @@
+SELECT view1.idequipa, equipa_nome, SUM((quantidade * preco)) as Total FROM view1 inner join equipa on view1.idequipa = equipa.idequipa group by(view1.idequipa) order by(Total) DESC limit 10;
+
+
+
+
+
+
+
+SELECT v1.idequipa, equipa_nome, SUM((quantidade * preco)) as Total FROM (SELECT * FROM
+        ((`encpro`
+        JOIN `produto` ON ((`encpro`.`idproduct` = `produto`.`idproduto`)))
+        JOIN `encomenda` ON ((`encomenda`.`idencomenda` = `encpro`.`idencomend`)))) as v1 inner join equipa on v1.idequipa = equipa.idequipa group by(v1.idequipa) order by(Total) DESC limit 10;

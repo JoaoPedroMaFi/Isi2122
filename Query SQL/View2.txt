@@ -1,0 +1,29 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `view2` AS
+    SELECT 
+        `v1`.`idequipa` AS `idequipa`,
+        `equipa`.`equipa_nome` AS `equipa_nome`,
+        SUM((`v1`.`quantidade` * `v1`.`preco`)) AS `Total`
+    FROM
+        ((SELECT 
+            `encpro`.`idencPro` AS `idencPro`,
+                `encpro`.`idproduct` AS `idproduct`,
+                `encpro`.`idencomend` AS `idencomend`,
+                `encpro`.`quantidade` AS `quantidade`,
+                `produto`.`idproduto` AS `idproduto`,
+                `produto`.`descricao` AS `descricao`,
+                `produto`.`preco` AS `preco`,
+                `encomenda`.`idencomenda` AS `idencomenda`,
+                `encomenda`.`idequipa` AS `idequipa`,
+                `encomenda`.`entregue` AS `entregue`
+        FROM
+            ((`encpro`
+        JOIN `produto` ON ((`encpro`.`idproduct` = `produto`.`idproduto`)))
+        JOIN `encomenda` ON ((`encomenda`.`idencomenda` = `encpro`.`idencomend`)))) `v1`
+        JOIN `equipa` ON ((`v1`.`idequipa` = `equipa`.`idequipa`)))
+    GROUP BY `v1`.`idequipa`
+    ORDER BY `Total` DESC
+    LIMIT 10
