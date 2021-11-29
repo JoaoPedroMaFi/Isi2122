@@ -3279,19 +3279,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yuri Lemos\\.nuget\\packages\\": {}
+    "C:\\Users\\freak\\.nuget\\packages\\": {},
+    "D:\\VisualStudio2019\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yuri Lemos\\Desktop\\Dashboard\\Dashboard.csproj",
+      "projectUniqueName": "D:\\IPCA\\3ano\\isi\\tp1Git\\Dashboard\\Dashboard.csproj",
       "projectName": "Dashboard",
-      "projectPath": "C:\\Users\\Yuri Lemos\\Desktop\\Dashboard\\Dashboard.csproj",
-      "packagesPath": "C:\\Users\\Yuri Lemos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yuri Lemos\\Desktop\\Dashboard\\obj\\",
+      "projectPath": "D:\\IPCA\\3ano\\isi\\tp1Git\\Dashboard\\Dashboard.csproj",
+      "packagesPath": "C:\\Users\\freak\\.nuget\\packages\\",
+      "outputPath": "D:\\IPCA\\3ano\\isi\\tp1Git\\Dashboard\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\VisualStudio2019\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Yuri Lemos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\freak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
