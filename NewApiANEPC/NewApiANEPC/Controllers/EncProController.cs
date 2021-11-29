@@ -62,7 +62,7 @@ namespace NewApiANEPC.Controllers
             using var reader = await command.ExecuteReaderAsync();
 
             List<EncPro> list = new();
-            var value = 0;
+            //var value = 0;
             while (await reader.ReadAsync())
             {
                 EncPro encPro = new();

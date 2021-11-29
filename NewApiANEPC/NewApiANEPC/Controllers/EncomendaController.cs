@@ -133,66 +133,36 @@ namespace NewApiANEPC.Controllers
 
         //------------------------------------------------------------------------------------
 
-        //[HttpPut]
-        //[Route("editCity")]
-        //public async Task<ActionResult<IEnumerable<int>>> EditCity([FromBody] Cidade city)
-        //{
-        //    //TODO: verificar se a cidade já existe
+        [HttpPut]
+        [Route("editEncomenda")]
+        public async Task<ActionResult<IEnumerable<int>>> EditEncomenda([FromBody] Encomenda enco)
+        {
+            //TODO: verificar se a encomenda existe
 
 
-        //    string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
-        //    using var connection = new MySqlConnection(sqlConStr);
-        //    //open connection
-        //    await connection.OpenAsync();
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
 
-        //    // nova entrada na tabela cidades, adiciona uma cidade
-        //    string query = $@"
-        //                    UPDATE `mydb_isi`.`cidade` SET `cidade_nome` = '{city.CidadeNome}' WHERE (`idcidade` = '{city.IdCidade}'); ";
-        //    using var command = new MySqlCommand(query, connection);
-        //    using var reader = await command.ExecuteReaderAsync();
+            // nova entrada na tabela encomenda, altera o estado de entrega de uma encomenda
+            string query = $@"
+                            UPDATE `mydb_isi`.`encomenda` SET `entregue` = '1' WHERE (`idencomenda` = {enco.IdEncomenda}); ";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
 
-        //    var value = 0;
-
-
-        //    //Close the reader
-        //    await reader.CloseAsync();
-        //    //Close connection
-        //    await connection.CloseAsync();
+            var value = 0;
 
 
-        //    return Ok(value);
-        //}
-
-        ////---------------------------------------------------------------------------------------
-
-        //[HttpDelete]
-        //[Route("deleteCity/{cityId}")]
-        //// [FromRoute] onde vai buscar o parametro
-        //public async Task<ActionResult<IEnumerable<int>>> DeleteCity([FromRoute] int cityId)
-        //{
-        //    //TODO: verificar se a cidade já existe
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
 
 
-        //    string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
-        //    using var connection = new MySqlConnection(sqlConStr);
-        //    //open connection
-        //    await connection.OpenAsync();
-
-        //    // nova entrada na tabela cidades, adiciona uma cidade
-        //    string query = $@"
-        //                    DELETE FROM `mydb_isi`.`cidade` WHERE(`idcidade` = '{cityId}'); ";
-        //    using var command = new MySqlCommand(query, connection);
-        //    using var reader = await command.ExecuteReaderAsync();
-
-        //    var value = 0;
-
-        //    //Close the reader
-        //    await reader.CloseAsync();
-        //    //Close connection
-        //    await connection.CloseAsync();
+            return Ok(value);
+        }
 
 
-        //    return Ok(value);
-        //}
     }
 }

@@ -93,7 +93,7 @@ namespace NewApiANEPC.Controllers
         [Route("addTeam")]
         public async Task<ActionResult<IEnumerable<int>>> AddTeam([FromBody] string teamName)
         {
-            //TODO: verificar se a cidade já existe
+            //TODO: verificar se a equipa já existe
 
 
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
@@ -125,7 +125,7 @@ namespace NewApiANEPC.Controllers
         [Route("editTeam")]
         public async Task<ActionResult<IEnumerable<int>>> EditTeam([FromBody] Equipa team)
         {
-            //TODO: verificar se a euipa já existe
+            //TODO: verificar se a equipa já existe
 
 
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
@@ -158,7 +158,7 @@ namespace NewApiANEPC.Controllers
         // [FromRoute] onde vai buscar o parametro
         public async Task<ActionResult<IEnumerable<int>>> DeleteTeam([FromRoute] int teamId)
         {
-            //TODO: verificar se a cidade já existe
+            //TODO: verificar se a equipa já existe
 
 
             string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_isi";
