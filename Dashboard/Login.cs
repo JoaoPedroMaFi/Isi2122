@@ -100,5 +100,10 @@ namespace Dashboard
             CreateUser cu = new();
             cu.Show();
         }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

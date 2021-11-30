@@ -18,8 +18,9 @@ namespace Dashboard
         {
             InitializeComponent();
 
-            //_ = LoadTop5();
+            _ = LoadTop5();
             _ = LoadTop10Teams();
+            _ = LoadVisitasDia();
         }
 
         public async Task<ActionResult<IEnumerable<int>>> LoadTop5()
@@ -91,6 +92,55 @@ namespace Dashboard
             await connection.CloseAsync();
 
             return null;
+        }
+
+        public async Task<ActionResult<IEnumerable<int>>> LoadVisitasDia()
+        {
+            string sqlConStr = "Server=localhost;user=root;password=1234;Database=mydb_filesexport";
+            using var connection = new MySqlConnection(sqlConStr);
+            //open connection
+            await connection.OpenAsync();
+
+            // retorna o id da ultima encomenda feita
+            string query = $@"select * from view_final";
+            using var command = new MySqlCommand(query, connection);
+            using var reader = await command.ExecuteReaderAsync();
+
+            //top10lstView.Items.Clear();
+            while (await reader.ReadAsync())
+            {
+                string[] row =
+                {
+                    reader.GetString(0),
+                    reader.GetInt32(1).ToString(),
+                    reader.GetInt32(2).ToString(),
+                    reader.GetFloat(3).ToString()
+
+                };
+
+                ListViewItem item = new ListViewItem(row);
+                visitaslstView.Items.Add(item);
+            }
+            //value =reader.GetInt32(0);
+
+            //Close the reader
+            await reader.CloseAsync();
+            //Close connection
+            await connection.CloseAsync();
+
+            return null;
+        }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void DashConsultas_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

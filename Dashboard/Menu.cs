@@ -30,5 +30,15 @@ namespace Dashboard
             DashConsultas dc = new();
             dc.Show();
         }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

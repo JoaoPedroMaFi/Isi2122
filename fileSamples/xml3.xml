@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <!DOCTYPE isolados SYSTEM "xml3Validation.dtd">
-<isolados data="2021-09-31">
-	<isolado utentNumber="17464754">
+<isolados data="2021-09-26">
+	<isolado utentNumber="16465415">
 		<idequipa>1</idequipa>
-		<firstname>primeiro</firstname>
-    <lastname>primeiroApelido</lastname>
-		<respeitou>true</respeitou>
-	</isolado>
-	<isolado utentNumber="245365346">
-		<idequipa>2</idequipa>
-		<firstname>segundo</firstname>
-    <lastname>segundoApelido</lastname>
+		<firstname>Joao</firstname>
+    <lastname>Tavares</lastname>
 		<respeitou>false</respeitou>
 	</isolado>
-	<isolado utentNumber="734364389">
+	<isolado utentNumber="1238754">
 		<idequipa>3</idequipa>
-		<firstname>terceiro</firstname>
-    <lastname>terceiroApelido</lastname>
+		<firstname>Tiago</firstname>
+    <lastname>Cruz</lastname>
 		<respeitou>true</respeitou>
 	</isolado>
+	<isolado utentNumber="423174898">
+		<idequipa>2</idequipa>
+		<firstname>Sara</firstname>
+    <lastname>Ferreira</lastname>
+		<respeitou>false</respeitou>
+	</isolado>
+  <isolado utentNumber="99455432">
+    <idequipa>2</idequipa>
+    <firstname>Teresa</firstname>
+    <lastname>Amaral</lastname>
+    <respeitou>true</respeitou>
+  </isolado>
 </isolados>

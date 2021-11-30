@@ -1,0 +1,13 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `mydb_filesexport`.`viewres` AS
+    SELECT 
+        `mydb_filesexport`.`isolado`.`data` AS `data`,
+        COUNT(`mydb_filesexport`.`isolado`.`respeito`) AS `nrespeitou`
+    FROM
+        `mydb_filesexport`.`isolado`
+    WHERE
+        (`mydb_filesexport`.`isolado`.`respeito` = FALSE)
+    GROUP BY `mydb_filesexport`.`isolado`.`data`

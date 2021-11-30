@@ -1,0 +1,15 @@
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `mydb_filesexport`.`view_final` AS
+    SELECT 
+        `mydb_filesexport`.`isolado`.`data` AS `data`,
+        COUNT(`mydb_filesexport`.`isolado`.`data`) AS `visitas_dia`,
+        `mydb_filesexport`.`viewres`.`nrespeitou` AS `nrespeitou`,
+        TRUNCATE(((`mydb_filesexport`.`viewres`.`nrespeitou` / COUNT(`mydb_filesexport`.`isolado`.`data`)) * 100),
+            1) AS `percent`
+    FROM
+        (`mydb_filesexport`.`isolado`
+        JOIN `mydb_filesexport`.`viewres` ON ((`mydb_filesexport`.`isolado`.`data` = `mydb_filesexport`.`viewres`.`data`)))
+    GROUP BY `mydb_filesexport`.`viewres`.`data`
