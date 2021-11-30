@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Dashboard"
+    "\\NewSoap",
+    "\\NewSoap\\WCFSoap",
+    "\\NewSoap\\WCFSoap\\WCFSoap",
+    "\\NewSoap\\WCFSoap\\WCFSoap\\Services"
   ],
-  "SelectedNode": "\\Dashboard\\Dashboard.sln",
+  "SelectedNode": "\\NewSoap\\WCFSoap\\WCFSoap\\Services\\Client.svc.cs",
   "PreviewInSolutionExplorer": false
 }
